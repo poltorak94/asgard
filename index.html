@@ -1,0 +1,2201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Asgard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <div class="header__top">
+                    <div class="header__top-container container">
+                        <div class="header__top-group">
+                            <div class="header__top-group-item">
+                                <img src="./assets/img/location.svg" alt="" />
+                                Санкт-Петербург, Ул. Оптиков, 51/1
+                            </div>
+                            <a
+                                href="mailto:asgardmed@inbox.ru"
+                                class="header__top-group-item"
+                            >
+                                <img src="./assets/img/mail.svg" alt="" />
+                                asgardmed@inbox.ru
+                            </a>
+                            <div class="header__top-group-item">
+                                <img src="./assets/img/calendar.svg" alt="" />
+                                Ежедневно с 10:00 до 21:00
+                            </div>
+                        </div>
+                        <div class="header__top-group">
+                            <a href="#" target="_blank" class="header__social">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M10.5871 20H9.4931C9.20932 19.9682 8.92504 19.9428 8.64223 19.9037C7.2189 19.7061 5.89686 19.2292 4.68441 18.4563C4.55915 18.3766 4.452 18.3566 4.30619 18.4045C3.1642 18.7767 2.01879 19.1402 0.874841 19.506C0.812212 19.5261 0.748605 19.5447 0.660045 19.5716C1.0593 18.383 1.44388 17.2316 1.83531 16.0831C1.88815 15.9285 1.8813 15.8136 1.78246 15.6727C0.944809 14.4797 0.404149 13.1605 0.15706 11.7245C0.0856248 11.3097 0.0513749 10.8885 0 10.4708C0 10.1191 0 9.76795 0 9.41627C0.0117428 9.35366 0.0259321 9.29105 0.0352285 9.22795C0.0998141 8.7848 0.13651 8.33529 0.231921 7.89899C0.75888 5.48318 2.00851 3.50905 3.98376 2.03091C6.40816 0.216238 9.13494 -0.383435 12.101 0.236292C14.4931 0.735693 16.4385 1.98786 17.9254 3.92139C19.5313 6.00899 20.1991 8.38665 19.9481 11.0025C19.7451 13.1151 18.9275 14.9826 17.5218 16.5776C15.9712 18.3375 14.0376 19.4331 11.7237 19.8445C11.3475 19.9115 10.9663 19.9487 10.5871 20ZM13.207 15.5979C13.207 15.5979 13.2655 15.613 13.2694 15.5979C13.3863 15.5915 13.5047 15.5954 13.6197 15.5764C13.7797 15.5499 13.9417 15.5211 14.0943 15.4683C15.5059 14.9762 15.9874 14.2988 16.0285 12.9923C16.0348 12.7844 15.9565 12.6475 15.7692 12.5579C15.0298 12.2063 14.2954 11.8438 13.5537 11.498C13.1549 11.3121 12.9303 11.387 12.6651 11.7479C12.4768 12.0047 12.2894 12.2625 12.0927 12.5134C11.7937 12.895 11.574 12.9492 11.1263 12.7668C9.4931 12.1016 8.27087 10.9648 7.35199 9.47985C7.12839 9.11839 7.13964 9.01127 7.42587 8.68795C7.60691 8.4835 7.79577 8.28442 7.96506 8.07067C8.12408 7.87013 8.27185 7.65002 8.15686 7.37513C7.81192 6.54801 7.46404 5.72187 7.10539 4.90063C7.06038 4.79791 6.95518 4.67563 6.85586 4.65117C6.33085 4.52057 5.78237 4.4922 5.34446 4.84829C4.36784 5.64215 4.06008 6.71089 4.24846 7.92442C4.38057 8.77502 4.78031 9.51947 5.26372 10.2233C6.04022 11.3552 6.91702 12.3956 7.96311 13.2916C9.12663 14.2885 10.4771 14.9209 11.9317 15.3489C12.3652 15.4766 12.6982 15.5015 13.141 15.5979H13.207Z"
+                                        fill="#BDBDBD"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="header__social">
+                                <svg
+                                    width="23"
+                                    height="19"
+                                    viewBox="0 0 23 19"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M12.2501 14.8897C11.3684 15.7355 10.4942 16.5674 9.62821 17.4058C9.32547 17.6994 8.98507 17.8618 8.55054 17.8392C8.2539 17.8237 8.08802 17.6954 7.99695 17.4183C7.33345 15.3903 6.66028 13.3673 6.00035 11.3372C5.93624 11.1403 5.84159 11.0446 5.63908 10.9829C4.076 10.5129 2.51596 10.0318 0.958474 9.54422C0.718822 9.46905 0.477134 9.37083 0.270045 9.23202C-0.0500008 9.01855 -0.0968127 8.67027 0.19016 8.41971C0.455254 8.18869 0.771739 7.98724 1.10044 7.85895C3.01104 7.11329 4.93183 6.39168 6.84956 5.66355C11.7164 3.81292 16.5832 1.96379 21.4506 0.113156C22.3761 -0.239131 23.0874 0.256977 22.9913 1.24268C22.9297 1.87309 22.7638 2.49347 22.63 3.11586C21.5732 8.03034 20.5154 12.9453 19.453 17.8588C19.2006 19.0254 18.3687 19.3301 17.3938 18.622C15.761 17.4368 14.1297 16.2477 12.4979 15.0605C12.4201 15.0049 12.3392 14.9513 12.2501 14.8897ZM8.58514 16.382C8.60345 16.377 8.62177 16.372 8.64009 16.3675C8.65027 16.3214 8.66502 16.2763 8.66909 16.2307C8.77391 15.1167 8.88483 14.0032 8.97591 12.8872C8.99626 12.6386 9.08276 12.4622 9.27255 12.2949C10.7776 10.9694 12.2736 9.63542 13.7725 8.30445C15.4318 6.83066 17.0915 5.35837 18.7447 3.87856C18.847 3.78736 18.8897 3.63201 18.9599 3.50573C18.8042 3.4892 18.6373 3.42756 18.4959 3.46364C18.303 3.51275 18.1204 3.623 17.9484 3.72973C14.2864 6.00131 10.6275 8.27689 6.96303 10.544C6.75594 10.6722 6.71727 10.781 6.79614 11.005C7.06632 11.7692 7.31208 12.5404 7.56699 13.3101C7.90638 14.3344 8.24576 15.3582 8.58514 16.382Z"
+                                        fill="#BDBDBD"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="header__social">
+                                <svg
+                                    width="35"
+                                    height="20"
+                                    viewBox="0 0 35 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M32.9449 19.9156C32.7622 19.9387 32.5783 19.9672 32.3945 19.9683C30.5923 19.9716 28.7901 19.9672 26.989 19.9738C26.7385 19.9749 26.5262 19.8816 26.3402 19.7313C25.9638 19.423 25.5764 19.1191 25.2295 18.7769C24.3279 17.8805 23.4492 16.959 22.5542 16.0539C22.2751 15.7719 21.9775 15.5119 21.6842 15.2453C21.5322 15.1016 21.3418 15.0709 21.1448 15.0742C20.8811 15.0807 20.6633 15.2003 20.5594 15.445C20.4642 15.6666 20.3854 15.9068 20.3602 16.1438C20.3165 16.5728 20.3143 17.0039 20.3055 17.4329C20.2957 17.9134 20.2815 18.3973 20.1469 18.8646C20.0867 19.0709 20.0013 19.2804 19.8952 19.4669C19.7092 19.7873 19.4159 19.9617 19.0428 19.9694C17.4693 20.0056 15.8947 20.0286 14.3234 19.9255C14.0323 19.9036 13.7643 19.8114 13.5049 19.6831C12.0387 18.9612 10.7508 18.0023 9.63137 16.8065C8.26906 15.3528 7.03259 13.7938 5.79611 12.2349C4.1318 10.1328 2.69289 7.88379 1.39952 5.5382C0.926815 4.68357 0.470524 3.81686 0.131314 2.8964C-0.0361019 2.4422 -0.0361019 1.9869 0.0897339 1.52942C0.125843 1.39338 0.190402 1.26063 0.26481 1.14104C0.37095 0.965509 0.536177 0.867868 0.747363 0.863479C0.82177 0.862382 0.89946 0.860188 0.973867 0.860188C2.60864 0.860188 4.24122 0.866771 5.8749 0.854702C6.19769 0.852508 6.44499 0.961121 6.66164 1.18054C7.06432 1.58427 7.37727 2.05492 7.65848 2.54423C7.96487 3.07742 8.27125 3.6139 8.54152 4.16683C9.13569 5.38351 9.86444 6.51791 10.6359 7.62378C11.0123 8.16245 11.4193 8.68028 11.81 9.20799C11.9916 9.45374 12.2433 9.54699 12.5333 9.55467C12.8156 9.56454 12.9305 9.44935 12.9414 9.1663C12.9447 9.09828 12.9436 9.03135 12.9436 8.96333C12.9436 7.11363 12.9436 5.26612 12.9414 3.41752C12.9414 3.2738 12.9414 3.12898 12.9272 2.98636C12.8943 2.65613 12.7204 2.46304 12.3943 2.39941C12.2466 2.37089 12.0956 2.35772 11.9457 2.33798C11.4861 2.27764 11.2957 2.08235 11.2475 1.61938C11.1764 0.920528 11.5102 0.375271 12.1634 0.130619C12.4446 0.025298 12.7357 0.00225934 13.0333 0.00335643C14.4897 0.00555062 15.9461 0.00335635 17.4025 0.00445345C17.698 0.00445345 17.9934 -0.0109062 18.2867 0.0154241C18.5942 0.0450457 18.9049 0.0856383 19.2036 0.173406C19.8405 0.357718 20.2092 0.792168 20.2815 1.4614C20.3001 1.62157 20.3044 1.78175 20.3044 1.94192C20.3066 3.06425 20.3066 4.18658 20.3066 5.30891C20.3066 6.49926 20.3055 7.68961 20.3088 8.87995C20.3088 8.99625 20.3187 9.11802 20.3504 9.22883C20.4543 9.58978 20.8461 9.70936 21.1754 9.48226C22.146 8.81193 22.7829 7.87831 23.2731 6.83936C23.7261 5.8794 24.1167 4.88982 24.5424 3.9167C24.8827 3.14544 25.2317 2.37857 25.5873 1.61389C25.6738 1.42409 25.8018 1.25185 25.9211 1.07851C26.0294 0.922722 26.1717 0.854702 26.3719 0.854702C28.487 0.861285 30.5978 0.860188 32.7118 0.857994C33.2294 0.857994 33.6397 1.06864 33.9625 1.46249C34.0763 1.60292 34.1234 1.76749 34.1529 1.94851C34.2788 2.7834 33.9932 3.51077 33.5949 4.21181C33.2174 4.87446 32.7687 5.48554 32.2807 6.06591C31.2697 7.26613 30.2783 8.48061 29.4117 9.79164C29.1884 10.1284 28.998 10.4872 28.7945 10.835C28.6446 11.0895 28.6643 11.3342 28.8525 11.5613C29.2344 12.022 29.6042 12.496 30.0058 12.9359C30.96 13.9847 31.9382 15.0083 32.8979 16.0517C33.2053 16.3874 33.4833 16.7472 33.7689 17.1027C33.863 17.2201 33.933 17.3572 34.0249 17.4768C34.7416 18.4049 33.8487 19.7961 32.9449 19.9156Z"
+                                        fill="#BDBDBD"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__center">
+                    <div class="header__center-container container">
+                        <div class="header__center-group">
+                            <a href="#" class="header__logo">
+                                <img
+                                    src="./assets/img/logo.svg"
+                                    alt=""
+                                    class="header__logo-icon"
+                                />
+                            </a>
+                        </div>
+                        <div class="header__center-group">
+                            <div class="header__tels">
+                                <img
+                                    src="./assets/img/tel.svg"
+                                    alt=""
+                                    class="header__tel-icon"
+                                />
+                                <div class="header__tels-items">
+                                    <a
+                                        href="tel:+78126170505"
+                                        class="header__tel"
+                                    >
+                                        +7 (812) 617-05-05
+                                    </a>
+                                    <a
+                                        href="tel:+78129388712"
+                                        class="header__tel"
+                                    >
+                                        +7 (812) 938-87-12
+                                    </a>
+                                </div>
+                            </div>
+                            <form action="#" class="header__search-form">
+                                <a href="#" class="header__search-form-link">
+                                    <img
+                                        src="./assets/img/search.svg"
+                                        alt=""
+                                        class="header__search-icon"
+                                    />
+                                </a>
+                                <a
+                                    href="#"
+                                    class="header__search-form-pseudosubmit"
+                                >
+                                    <img
+                                        src="./assets/img/search.svg"
+                                        alt=""
+                                        class="header__search-icon"
+                                    />
+                                </a>
+                                <input
+                                    type="text"
+                                    class="header__search-form-field"
+                                    placeholder="Найти..."
+                                />
+                                <input
+                                    type="submit"
+                                    value="submit"
+                                    class="header__search-form-submit"
+                                />
+                            </form>
+                            <a href="#" class="consult-button">
+                                Записаться на приём
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__bottom">
+                    <div class="header__bottom-container container">
+                        <nav class="header__nav">
+                            <div
+                                class="header__nav-item header__nav-item--dropdown"
+                            >
+                                <a href="#" class="header__nav-item-link">
+                                    О центре
+                                    <svg
+                                        width="12"
+                                        height="7"
+                                        viewBox="0 0 12 7"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M1 1L6 6L11 1"
+                                            stroke="#333333"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
+
+                                <div class="header__dropdown-menu">
+                                    <div
+                                        class="header__dropdown-menu-container"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="header__nav-dropdown-link"
+                                            >Какой-то пункт 1</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="header__nav-dropdown-link"
+                                            >Какой-то длинный пункт 2</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="header__nav-dropdown-link"
+                                            >Какой-то очень длинный пункт 3</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="header__nav-dropdown-link"
+                                            >Какой-то пункт 4</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="header__nav-item header__nav-item--dropdown"
+                            >
+                                <a href="#" class="header__nav-item-link">
+                                    Услуги
+                                    <svg
+                                        width="12"
+                                        height="7"
+                                        viewBox="0 0 12 7"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M1 1L6 6L11 1"
+                                            stroke="#333333"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
+                                <div class="header__dropdown-menu">
+                                    <div
+                                        class="header__dropdown-menu-container"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="header__nav-dropdown-link"
+                                            >Какой-то пункт 1</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="header__nav-dropdown-link"
+                                            >Какой-то длинный пункт 2</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="header__nav-dropdown-link"
+                                            >Какой-то очень длинный пункт 3</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="header__nav-dropdown-link"
+                                            >Какой-то пункт 4</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__nav-item">
+                                <a href="#" class="header__nav-item-link">
+                                    Специалисты
+                                </a>
+                            </div>
+                            <div class="header__nav-item">
+                                <a href="#" class="header__nav-item-link">
+                                    Наши работы
+                                </a>
+                            </div>
+                            <div class="header__nav-item">
+                                <a href="#" class="header__nav-item-link"
+                                    >Цены</a
+                                >
+                            </div>
+                            <div class="header__nav-item">
+                                <a href="#" class="header__nav-item-link"
+                                    >Акции</a
+                                >
+                            </div>
+                            <div class="header__nav-item">
+                                <a href="#" class="header__nav-item-link"
+                                    >Отзывы</a
+                                >
+                            </div>
+                            <div class="header__nav-item">
+                                <a href="#" class="header__nav-item-link"
+                                    >Контакты</a
+                                >
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main-slider">
+                <div class="main-slider__template">
+                    <div class="main-slider__up-line">
+                        <img
+                            src="./assets/img/up-line.svg"
+                            class="main-slider__line-image main-slider__line-image--up"
+                            alt=""
+                        />
+                    </div>
+                    <div class="main-slider__down-line">
+                        <img
+                            src="./assets/img/down-line.svg"
+                            class="main-slider__line-image main-slider__line-image--down"
+                            alt=""
+                        />
+                    </div>
+                    <div class="main-slider__inner">
+                        <div class="main-slider__container">
+                            <div class="main-slider__wrapper swiper-wrapper">
+                                <div class="main-slider__slide swiper-slide">
+                                    <img
+                                        src="./assets/img/swiper-slide.png"
+                                        alt=""
+                                        class="main-slider__slide-image"
+                                    />
+                                    <div
+                                        class="main-slider__slide-container container"
+                                    >
+                                        <div class="main-slider__slide-items">
+                                            <div
+                                                class="main-slider__slide-title"
+                                            >
+                                                <span> Горячая акция </span> для
+                                                любимых пациентов на имплантацию
+                                            </div>
+
+                                            <div
+                                                class="main-slider__slide-desc"
+                                            >
+                                                Делаем красивую улыбку
+                                                доступной, выполняя все виды
+                                                лечения
+                                            </div>
+                                            <a
+                                                href="#"
+                                                target="_blank"
+                                                class="button-arrow"
+                                            >
+                                                Записаться на прием
+                                                <img
+                                                    src="./assets/img/arrow-btn.svg"
+                                                    alt=""
+                                                    class="button-arrow__icon"
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-slider__slide swiper-slide">
+                                    <img
+                                        src="./assets/img/swiper-slide-2.png"
+                                        alt=""
+                                        class="main-slider__slide-image"
+                                    />
+                                    <div
+                                        class="main-slider__slide-container container"
+                                    >
+                                        <div class="main-slider__slide-items">
+                                            <div
+                                                class="main-slider__slide-title"
+                                            >
+                                                <span> Горячая акция </span> для
+                                                любимых пациентов на имплантацию
+                                            </div>
+
+                                            <div
+                                                class="main-slider__slide-desc"
+                                            >
+                                                Делаем красивую улыбку
+                                                доступной, выполняя все виды
+                                                лечения
+                                            </div>
+                                            <a
+                                                href="#"
+                                                target="_blank"
+                                                class="button-arrow"
+                                            >
+                                                Записаться на прием
+                                                <img
+                                                    src="./assets/img/arrow-btn.svg"
+                                                    alt=""
+                                                    class="button-arrow__icon"
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-slider__controls">
+                    <div class="main-slider__controls-container container">
+                        <div class="main-slider__pagination"></div>
+                        <div class="main-slider__arrows">
+                            <div
+                                class="main-slider__arrow main-slider__arrow--left"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="23"
+                                    height="42"
+                                    viewBox="0 0 23 42"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M22 1.00024L2 21.0002L22 41.0002"
+                                        stroke="#6F7378"
+                                        stroke-width="2"
+                                    />
+                                </svg>
+                            </div>
+                            <div
+                                class="main-slider__arrow main-slider__arrow--right"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="23"
+                                    height="42"
+                                    viewBox="0 0 23 42"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M1 1L21 21L1 41"
+                                        stroke="#6F7378"
+                                        stroke-width="2"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about container">
+                <div class="about__pre-title pre-title">Про нас</div>
+                <div class="about__grid">
+                    <div class="about__group">
+                        <h1 class="about__title title">
+                            Центр интегративной медицины и стоматологии
+                            <span> в Санкт-Петербурге </span>
+                        </h1>
+                        <p class="about__desc">
+                            Многопрофильный медицинский центр Асгард работает
+                            <span> с 2014 года</span> в Приморском районе и
+                            оборудован по последнему слову техники. Здесь
+                            оказывают все виды медицинских услуг для взрослых и
+                            детей. Для выявления заболеваний на начальной стадии
+                            и своевременного назначения лечения применяется
+                            диагностическое оборудование экспертного уровня.
+                        </p>
+                        <img
+                            src="./assets/img/about-img.jpg"
+                            alt=""
+                            class="about__img"
+                        />
+                    </div>
+                    <div class="about__group">
+                        <p class="about__desc">
+                            Мы придерживаемся холистической философии, основной
+                            принцип которой гласит:
+                        </p>
+                        <p class="about__desc about__desc--title">
+                            «Целое есть нечто большее, чем простая сумма
+                            отдельных частей».
+                        </p>
+                        <p class="about__desc">
+                            Организм человека — это сложная единая система, в
+                            которой все взаимосвязано. Нельзя отделить
+                            зубочелюстную систему, позвоночник или ЛОР-органы от
+                            всего тела. Нельзя лечить дисфункцию ВНЧС отдельно
+                            от всего организма. Мы учитываем это в своей работе.
+                        </p>
+                        <a href="#" target="_blank" class="button-tour">
+                            Смотреть <span> 3D-тур</span>
+                            <img src="./assets/img/cube.png" alt="" />
+                        </a>
+                        <ul class="about__list">
+                            <li class="about__list-item">
+                                Клиника площадью 350 квадратных метров
+                            </li>
+                            <li class="about__list-item">
+                                7 стоматологических кабинетов
+                            </li>
+                            <li class="about__list-item">
+                                2 остеопатических (физиотерапевтических,
+                                массажных)
+                            </li>
+                            <li class="about__list-item">
+                                Косметологический кабинет
+                            </li>
+                            <li class="about__list-item">
+                                Зуботехническая лаборатория
+                            </li>
+                            <li class="about__list-item">
+                                Современный рентген кабинет
+                            </li>
+                        </ul>
+                        <a href="#" target="_blank" class="button-main">
+                            ПОДРОБНЕЕ
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs container">
+                <div class="tabs__pretitle pre-title">
+                    Услуги для всей семьи
+                </div>
+                <h2 class="tabs__title title">
+                    Бережно решаем проблемы любой сложности
+                </h2>
+                <div class="tabs__nav">
+                    <a
+                        href="#"
+                        class="tabs__nav-item tabs__nav-item--active"
+                        data-id="1"
+                        data-src="https://www.youtube.com/embed/krDWc30PAGg?si=7-tNcdOHMT0Bz8_m"
+                    >
+                        <img src="./assets/img/tab1.png" alt="" />
+                        Лечение дисфункции ВНЧС
+                    </a>
+                    <a
+                        href="#"
+                        class="tabs__nav-item"
+                        data-id="2"
+                        data-src="https://www.youtube.com/embed/ahy5o5nT4oI?si=8GWKvz-REZMsNkQh"
+                    >
+                        <img src="./assets/img/tab2.png" alt="" />
+                        Лечение головных болей
+                    </a>
+                    <a
+                        href="#"
+                        class="tabs__nav-item"
+                        data-id="3"
+                        data-src="https://www.youtube.com/embed/G5RpJwCJDqc?si=xvShd8VQSSYeNB2-"
+                    >
+                        <img src="./assets/img/tab3.png" alt="" />
+                        Функциональная ортодонтия
+                    </a>
+                    <a
+                        href="#"
+                        class="tabs__nav-item"
+                        data-id="4"
+                        data-src="https://www.youtube.com/embed/CHSnz0bCaUk?si=PtSxapob_ANyJJ-f"
+                    >
+                        <img src="./assets/img/tab4.png" alt="" />
+                        Квалифицированная имплантация
+                    </a>
+                    <a
+                        href="#"
+                        class="tabs__nav-item"
+                        data-id="5"
+                        data-src="https://www.youtube.com/embed/WvaYxmnQqoE?si=AoNjYZnWPLGpxrq4"
+                    >
+                        <img src="./assets/img/tab5.png" alt="" />
+                        Детская стоматология
+                    </a>
+                </div>
+
+                <div class="tabs__items">
+                    <div class="tabs__item" data-id="1">
+                        <div class="tabs__item-grid">
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-title">Стоматология</div>
+                                <p class="tabs__item-desc">
+                                    В нашем медицинском центре работают
+                                    врачи-специалисты (челюстно-лицевые хирурги,
+                                    имплантологи) с большим практическим опытом
+                                    с разными пациентами как в частных клиниках,
+                                    так и в городских больницах, и постоянно
+                                    повышают квалификацию, участвуют в
+                                    международных семинарах и конференциях.
+                                </p>
+                                <div class="tabs__item-list-title">
+                                    Направления:
+                                </div>
+                                <div class="tabs__item-list">
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Хирургическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Терапевтическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Протезирование
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Профессиональная гигиена и отбеливание
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Лечение под микроскопом
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Эстетическая стоматология
+                                    </a>
+                                </div>
+                                <a href="#" target="_blank" class="button-main">
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </div>
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-group-video">
+                                    <div class="tabs__item-group-video-holder">
+                                        <img
+                                            src="./assets/img/video-holder.jpg"
+                                            alt=""
+                                            class="tabs__item-group-video-holder-image"
+                                        />
+                                        <a
+                                            href="#"
+                                            class="tabs__item-group-video-play"
+                                        >
+                                            <img
+                                                src="./assets/img/play-video.png"
+                                                alt=""
+                                                class="tabs__item-group-video-holder-play-icon"
+                                            />
+                                        </a>
+                                    </div>
+                                    <iframe
+                                        class="tabs__item-group-video-iframe"
+                                        src=""
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item" data-id="2">
+                        <div class="tabs__item-grid">
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-title">
+                                    Стоматология 2
+                                </div>
+                                <p class="tabs__item-desc">
+                                    В нашем медицинском центре работают
+                                    врачи-специалисты (челюстно-лицевые хирурги,
+                                    имплантологи) с большим практическим опытом
+                                    с разными пациентами как в частных клиниках,
+                                    так и в городских больницах, и постоянно
+                                    повышают квалификацию, участвуют в
+                                    международных семинарах и конференциях.
+                                </p>
+                                <div class="tabs__item-list-title">
+                                    Направления:
+                                </div>
+                                <div class="tabs__item-list">
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Хирургическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Терапевтическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Протезирование
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Профессиональная гигиена и отбеливание
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Лечение под микроскопом
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Эстетическая стоматология
+                                    </a>
+                                </div>
+                                <a href="#" target="_blank" class="button-main">
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </div>
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-group-video">
+                                    <div class="tabs__item-group-video-holder">
+                                        <img
+                                            src="./assets/img/video-holder.jpg"
+                                            alt=""
+                                            class="tabs__item-group-video-holder-image"
+                                        />
+                                        <a
+                                            href="#"
+                                            class="tabs__item-group-video-play"
+                                        >
+                                            <img
+                                                src="./assets/img/play-video.png"
+                                                alt=""
+                                                class="tabs__item-group-video-holder-play-icon"
+                                            />
+                                        </a>
+                                    </div>
+                                    <iframe
+                                        class="tabs__item-group-video-iframe"
+                                        src=""
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item" data-id="3">
+                        <div class="tabs__item-grid">
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-title">
+                                    Стоматология 3
+                                </div>
+                                <p class="tabs__item-desc">
+                                    В нашем медицинском центре работают
+                                    врачи-специалисты (челюстно-лицевые хирурги,
+                                    имплантологи) с большим практическим опытом
+                                    с разными пациентами как в частных клиниках,
+                                    так и в городских больницах, и постоянно
+                                    повышают квалификацию, участвуют в
+                                    международных семинарах и конференциях.
+                                </p>
+                                <div class="tabs__item-list-title">
+                                    Направления:
+                                </div>
+                                <div class="tabs__item-list">
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Хирургическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Терапевтическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Протезирование
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Профессиональная гигиена и отбеливание
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Лечение под микроскопом
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Эстетическая стоматология
+                                    </a>
+                                </div>
+                                <a href="#" target="_blank" class="button-main">
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </div>
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-group-video">
+                                    <div class="tabs__item-group-video-holder">
+                                        <img
+                                            src="./assets/img/video-holder.jpg"
+                                            alt=""
+                                            class="tabs__item-group-video-holder-image"
+                                        />
+                                        <a
+                                            href="#"
+                                            class="tabs__item-group-video-play"
+                                        >
+                                            <img
+                                                src="./assets/img/play-video.png"
+                                                alt=""
+                                                class="tabs__item-group-video-holder-play-icon"
+                                            />
+                                        </a>
+                                    </div>
+                                    <iframe
+                                        class="tabs__item-group-video-iframe"
+                                        src=""
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item" data-id="4">
+                        <div class="tabs__item-grid">
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-title">
+                                    Стоматология 4
+                                </div>
+                                <p class="tabs__item-desc">
+                                    В нашем медицинском центре работают
+                                    врачи-специалисты (челюстно-лицевые хирурги,
+                                    имплантологи) с большим практическим опытом
+                                    с разными пациентами как в частных клиниках,
+                                    так и в городских больницах, и постоянно
+                                    повышают квалификацию, участвуют в
+                                    международных семинарах и конференциях.
+                                </p>
+                                <div class="tabs__item-list-title">
+                                    Направления:
+                                </div>
+                                <div class="tabs__item-list">
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Хирургическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Терапевтическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Протезирование
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Профессиональная гигиена и отбеливание
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Лечение под микроскопом
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Эстетическая стоматология
+                                    </a>
+                                </div>
+                                <a href="#" target="_blank" class="button-main">
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </div>
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-group-video">
+                                    <div class="tabs__item-group-video-holder">
+                                        <img
+                                            src="./assets/img/video-holder.jpg"
+                                            alt=""
+                                            class="tabs__item-group-video-holder-image"
+                                        />
+                                        <a
+                                            href="#"
+                                            class="tabs__item-group-video-play"
+                                        >
+                                            <img
+                                                src="./assets/img/play-video.png"
+                                                alt=""
+                                                class="tabs__item-group-video-holder-play-icon"
+                                            />
+                                        </a>
+                                    </div>
+                                    <iframe
+                                        class="tabs__item-group-video-iframe"
+                                        src=""
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item" data-id="5">
+                        <div class="tabs__item-grid">
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-title">
+                                    Стоматология 5
+                                </div>
+                                <p class="tabs__item-desc">
+                                    В нашем медицинском центре работают
+                                    врачи-специалисты (челюстно-лицевые хирурги,
+                                    имплантологи) с большим практическим опытом
+                                    с разными пациентами как в частных клиниках,
+                                    так и в городских больницах, и постоянно
+                                    повышают квалификацию, участвуют в
+                                    международных семинарах и конференциях.
+                                </p>
+                                <div class="tabs__item-list-title">
+                                    Направления:
+                                </div>
+                                <div class="tabs__item-list">
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Хирургическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Терапевтическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Протезирование
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Профессиональная гигиена и отбеливание
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Лечение под микроскопом
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Эстетическая стоматология
+                                    </a>
+                                </div>
+                                <a href="#" target="_blank" class="button-main">
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </div>
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-group-video">
+                                    <div class="tabs__item-group-video-holder">
+                                        <img
+                                            src="./assets/img/video-holder.jpg"
+                                            alt=""
+                                            class="tabs__item-group-video-holder-image"
+                                        />
+                                        <a
+                                            href="#"
+                                            class="tabs__item-group-video-play"
+                                        >
+                                            <img
+                                                src="./assets/img/play-video.png"
+                                                alt=""
+                                                class="tabs__item-group-video-holder-play-icon"
+                                            />
+                                        </a>
+                                    </div>
+                                    <iframe
+                                        class="tabs__item-group-video-iframe"
+                                        src=""
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item" data-id="6">
+                        <div class="tabs__item-grid">
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-title">
+                                    Стоматология 6
+                                </div>
+                                <p class="tabs__item-desc">
+                                    В нашем медицинском центре работают
+                                    врачи-специалисты (челюстно-лицевые хирурги,
+                                    имплантологи) с большим практическим опытом
+                                    с разными пациентами как в частных клиниках,
+                                    так и в городских больницах, и постоянно
+                                    повышают квалификацию, участвуют в
+                                    международных семинарах и конференциях.
+                                </p>
+                                <div class="tabs__item-list-title">
+                                    Направления:
+                                </div>
+                                <div class="tabs__item-list">
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Хирургическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Терапевтическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Протезирование
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Профессиональная гигиена и отбеливание
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Лечение под микроскопом
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Эстетическая стоматология
+                                    </a>
+                                </div>
+                                <a href="#" target="_blank" class="button-main">
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </div>
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-group-video">
+                                    <div class="tabs__item-group-video-holder">
+                                        <img
+                                            src="./assets/img/video-holder.jpg"
+                                            alt=""
+                                            class="tabs__item-group-video-holder-image"
+                                        />
+                                        <a
+                                            href="#"
+                                            class="tabs__item-group-video-play"
+                                        >
+                                            <img
+                                                src="./assets/img/play-video.png"
+                                                alt=""
+                                                class="tabs__item-group-video-holder-play-icon"
+                                            />
+                                        </a>
+                                    </div>
+                                    <iframe
+                                        class="tabs__item-group-video-iframe"
+                                        src=""
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item" data-id="7">
+                        <div class="tabs__item-grid">
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-title">
+                                    Стоматология 7
+                                </div>
+                                <p class="tabs__item-desc">
+                                    В нашем медицинском центре работают
+                                    врачи-специалисты (челюстно-лицевые хирурги,
+                                    имплантологи) с большим практическим опытом
+                                    с разными пациентами как в частных клиниках,
+                                    так и в городских больницах, и постоянно
+                                    повышают квалификацию, участвуют в
+                                    международных семинарах и конференциях.
+                                </p>
+                                <div class="tabs__item-list-title">
+                                    Направления:
+                                </div>
+                                <div class="tabs__item-list">
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Хирургическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Терапевтическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Протезирование
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Профессиональная гигиена и отбеливание
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Лечение под микроскопом
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Эстетическая стоматология
+                                    </a>
+                                </div>
+                                <a href="#" target="_blank" class="button-main">
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </div>
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-group-video">
+                                    <div class="tabs__item-group-video-holder">
+                                        <img
+                                            src="./assets/img/video-holder.jpg"
+                                            alt=""
+                                            class="tabs__item-group-video-holder-image"
+                                        />
+                                        <a
+                                            href="#"
+                                            class="tabs__item-group-video-play"
+                                        >
+                                            <img
+                                                src="./assets/img/play-video.png"
+                                                alt=""
+                                                class="tabs__item-group-video-holder-play-icon"
+                                            />
+                                        </a>
+                                    </div>
+                                    <iframe
+                                        class="tabs__item-group-video-iframe"
+                                        src=""
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item" data-id="8">
+                        <div class="tabs__item-grid">
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-title">
+                                    Стоматология 8
+                                </div>
+                                <p class="tabs__item-desc">
+                                    В нашем медицинском центре работают
+                                    врачи-специалисты (челюстно-лицевые хирурги,
+                                    имплантологи) с большим практическим опытом
+                                    с разными пациентами как в частных клиниках,
+                                    так и в городских больницах, и постоянно
+                                    повышают квалификацию, участвуют в
+                                    международных семинарах и конференциях.
+                                </p>
+                                <div class="tabs__item-list-title">
+                                    Направления:
+                                </div>
+                                <div class="tabs__item-list">
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Хирургическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Терапевтическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Протезирование
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Профессиональная гигиена и отбеливание
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Лечение под микроскопом
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Эстетическая стоматология
+                                    </a>
+                                </div>
+                                <a href="#" target="_blank" class="button-main">
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </div>
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-group-video">
+                                    <div class="tabs__item-group-video-holder">
+                                        <img
+                                            src="./assets/img/video-holder.jpg"
+                                            alt=""
+                                            class="tabs__item-group-video-holder-image"
+                                        />
+                                        <a
+                                            href="#"
+                                            class="tabs__item-group-video-play"
+                                        >
+                                            <img
+                                                src="./assets/img/play-video.png"
+                                                alt=""
+                                                class="tabs__item-group-video-holder-play-icon"
+                                            />
+                                        </a>
+                                    </div>
+                                    <iframe
+                                        class="tabs__item-group-video-iframe"
+                                        src=""
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item" data-id="9">
+                        <div class="tabs__item-grid">
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-title">
+                                    Стоматология 9
+                                </div>
+                                <p class="tabs__item-desc">
+                                    В нашем медицинском центре работают
+                                    врачи-специалисты (челюстно-лицевые хирурги,
+                                    имплантологи) с большим практическим опытом
+                                    с разными пациентами как в частных клиниках,
+                                    так и в городских больницах, и постоянно
+                                    повышают квалификацию, участвуют в
+                                    международных семинарах и конференциях.
+                                </p>
+                                <div class="tabs__item-list-title">
+                                    Направления:
+                                </div>
+                                <div class="tabs__item-list">
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Хирургическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Терапевтическая стоматология
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Протезирование
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Профессиональная гигиена и отбеливание
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Лечение под микроскопом
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="tabs__item-list-item"
+                                    >
+                                        Эстетическая стоматология
+                                    </a>
+                                </div>
+                                <a href="#" target="_blank" class="button-main">
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </div>
+                            <div class="tabs__item-group">
+                                <div class="tabs__item-group-video">
+                                    <div class="tabs__item-group-video-holder">
+                                        <img
+                                            src="./assets/img/video-holder.jpg"
+                                            alt=""
+                                            class="tabs__item-group-video-holder-image"
+                                        />
+                                        <a
+                                            href="#"
+                                            class="tabs__item-group-video-play"
+                                        >
+                                            <img
+                                                src="./assets/img/play-video.png"
+                                                alt=""
+                                                class="tabs__item-group-video-holder-play-icon"
+                                            />
+                                        </a>
+                                    </div>
+                                    <iframe
+                                        class="tabs__item-group-video-iframe"
+                                        src=""
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__nav tabs__nav--last">
+                    <a
+                        href="#"
+                        class="tabs__nav-item"
+                        data-id="6"
+                        data-src="https://www.youtube.com/embed/OC0cVvZVEL4?si=R5BJtiE6TTay2-5n"
+                    >
+                        <img src="./assets/img/tab1.png" alt="" />
+                        Стоматология (общая)
+                    </a>
+                    <a
+                        href="#"
+                        class="tabs__nav-item"
+                        data-id="7"
+                        data-src="https://www.youtube.com/embed/ImTqvWxc2Fo?si=wV0s1RnljNcDw-xi"
+                    >
+                        <img src="./assets/img/tab6.png" alt="" />
+                        Остеопатия
+                    </a>
+                    <a
+                        href="#"
+                        class="tabs__nav-item"
+                        data-id="8"
+                        data-src="https://www.youtube.com/embed/3nYNwmY7xwo?si=RypVrPMqhkQEJ2PA"
+                    >
+                        <img src="./assets/img/tab7.png" alt="" />
+                        Лечение зубов под наркозом
+                    </a>
+                    <a
+                        href="#"
+                        class="tabs__nav-item"
+                        data-id="9"
+                        data-src="https://www.youtube.com/embed/YEObdo6EdfY?si=D1VzyRGACarj8cIN"
+                    >
+                        <img src="./assets/img/tab8.png" alt="" />
+                        Психосоматическая медицина
+                    </a>
+                </div>
+            </section>
+            <section class="device container">
+                <div class="device__pretitle pre-title">Наше оборудование</div>
+                <h2 class="device__title title">
+                    Современное цифровое оборудование
+                </h2>
+                <p class="device__desc">
+                    Мы держим руку на пульсе новых технологий, внедряем
+                    инновационное оборудование и новейшие методики работы.
+                    Обращаясь к нам Вы можете быть уверены в том, что получите
+                    высококлассное лечение по европейским стандартам.
+                </p>
+
+                <div class="device__slider">
+                    <div class="device__slider-wrapper swiper-wrapper">
+                        <div class="device__slide swiper-slide">
+                            <div class="device__slide-grid">
+                                <div
+                                    class="device__slide-group device__slide-group--img"
+                                >
+                                    <img
+                                        src="./assets/img/device-slide.png"
+                                        alt=""
+                                        class="device__slide-img"
+                                    />
+                                </div>
+                                <div class="device__slide-group">
+                                    <div class="device__slide-title">
+                                        RAYSCAN, Symphony Alpha SC — томограф с
+                                        цефалостатом
+                                    </div>
+                                    <p class="device__slide-desc">
+                                        <strong> RAYSCAN </strong>является
+                                        передовым диагностическим оборудованием,
+                                        в котором применяются 2 сенсора:
+                                        высококачественный плоский сенсор
+                                        HAMAMATSU (Япония) для панорамной съемки
+                                        и отдельный сканирующий сенсор, которые
+                                        обеспечивают чёткое изображение с
+                                        первого раза (даже волос и мягких
+                                        тканей), последний имеет различные
+                                        режимы сканирования.
+                                    </p>
+                                    <div class="device__slide-list-title">
+                                        Позволяет делать максимально точную
+                                        компьютерную томографию и
+                                        ортопантомографию, а также:
+                                    </div>
+                                    <ul class="device__slide-list">
+                                        <li class="device__slide-list-item">
+                                            Цефалометрия в 6 проекциях;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Ортозональная панорамная;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Панорамная съемка широкой зубной
+                                            дуги;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Ортогональная панорамная;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Проекция синусов;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Латеральная проекция ВНЧС.
+                                        </li>
+                                    </ul>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="button-main"
+                                    >
+                                        ПОДРОБНЕЕ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="device__slide swiper-slide">
+                            <div class="device__slide-grid">
+                                <div
+                                    class="device__slide-group device__slide-group--img"
+                                >
+                                    <img
+                                        src="./assets/img/device-slide.png"
+                                        alt=""
+                                        class="device__slide-img"
+                                    />
+                                </div>
+                                <div class="device__slide-group">
+                                    <div class="device__slide-title">
+                                        RAYSCAN, Symphony Alpha SC — томограф с
+                                        цефалостатом
+                                    </div>
+                                    <p class="device__slide-desc">
+                                        <strong> RAYSCAN </strong>является
+                                        передовым диагностическим оборудованием,
+                                        в котором применяются 2 сенсора:
+                                        высококачественный плоский сенсор
+                                        HAMAMATSU (Япония) для панорамной съемки
+                                        и отдельный сканирующий сенсор, которые
+                                        обеспечивают чёткое изображение с
+                                        первого раза (даже волос и мягких
+                                        тканей), последний имеет различные
+                                        режимы сканирования.
+                                    </p>
+                                    <div class="device__slide-list-title">
+                                        Позволяет делать максимально точную
+                                        компьютерную томографию и
+                                        ортопантомографию, а также:
+                                    </div>
+                                    <ul class="device__slide-list">
+                                        <li class="device__slide-list-item">
+                                            Цефалометрия в 6 проекциях;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Ортозональная панорамная;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Панорамная съемка широкой зубной
+                                            дуги;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Ортогональная панорамная;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Проекция синусов;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Латеральная проекция ВНЧС.
+                                        </li>
+                                    </ul>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="button-main"
+                                    >
+                                        ПОДРОБНЕЕ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="device__slide swiper-slide">
+                            <div class="device__slide-grid">
+                                <div
+                                    class="device__slide-group device__slide-group--img"
+                                >
+                                    <img
+                                        src="./assets/img/device-slide.png"
+                                        alt=""
+                                        class="device__slide-img"
+                                    />
+                                </div>
+                                <div class="device__slide-group">
+                                    <div class="device__slide-title">
+                                        RAYSCAN, Symphony Alpha SC — томограф с
+                                        цефалостатом
+                                    </div>
+                                    <p class="device__slide-desc">
+                                        <strong> RAYSCAN </strong>является
+                                        передовым диагностическим оборудованием,
+                                        в котором применяются 2 сенсора:
+                                        высококачественный плоский сенсор
+                                        HAMAMATSU (Япония) для панорамной съемки
+                                        и отдельный сканирующий сенсор, которые
+                                        обеспечивают чёткое изображение с
+                                        первого раза (даже волос и мягких
+                                        тканей), последний имеет различные
+                                        режимы сканирования.
+                                    </p>
+                                    <div class="device__slide-list-title">
+                                        Позволяет делать максимально точную
+                                        компьютерную томографию и
+                                        ортопантомографию, а также:
+                                    </div>
+                                    <ul class="device__slide-list">
+                                        <li class="device__slide-list-item">
+                                            Цефалометрия в 6 проекциях;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Ортозональная панорамная;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Панорамная съемка широкой зубной
+                                            дуги;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Ортогональная панорамная;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Проекция синусов;
+                                        </li>
+                                        <li class="device__slide-list-item">
+                                            Латеральная проекция ВНЧС.
+                                        </li>
+                                    </ul>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="button-main"
+                                    >
+                                        ПОДРОБНЕЕ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="device__controls">
+                    <span class="device__controls-left">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="16"
+                            viewBox="0 0 10 16"
+                            fill="none"
+                        >
+                            <path
+                                d="M9 1L2 8L9 15"
+                                stroke="#DFB677"
+                                stroke-width="2"
+                            />
+                        </svg>
+                    </span>
+                    <span class="device__controls-pagination"></span>
+                    <span class="device__controls-right">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="16"
+                            viewBox="0 0 10 16"
+                            fill="none"
+                        >
+                            <path
+                                d="M1 1L8 8L1 15"
+                                stroke="#DFB677"
+                                stroke-width="2"
+                            />
+                        </svg>
+                    </span>
+                </div>
+            </section>
+            <section class="presentations container">
+                <div class="presentations__grid">
+                    <div class="presentations__group">
+                        <h3 class="presentation__title title title--2">
+                            Диагностическое заключение для пациентов
+                        </h3>
+                        <p class="presentations__desc">
+                            В нашем медицинском центре работают
+                            врачи-специалисты (челюстно-лицевые хирурги,
+                            имплантологи) с большим практическим опытом с
+                            разными пациентами как в частных клиниках, так и в
+                            городских больницах...
+                        </p>
+                        <ul class="presentations__list">
+                            <li class="presentations__list-item">
+                                Преимущества
+                            </li>
+                            <li class="presentations__list-item">
+                                Преимущества
+                            </li>
+                            <li class="presentations__list-item">
+                                Преимущества
+                            </li>
+                        </ul>
+                        <a href="#" target="_blank" class="button-main">
+                            Смотреть презентацию <strong> PDF</strong>
+                        </a>
+                    </div>
+                    <div class="presentations__group">
+                        <div class="presentations__card">
+                            <img
+                                src="./assets/img/presentation-1.png"
+                                alt=""
+                                class="presentations__card-img"
+                            />
+                            <div class="presentations__card-overlay">
+                                <img
+                                    src="./assets/img/pdf-icon.svg"
+                                    alt=""
+                                    class="presentations__card-link-icon"
+                                />
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="presentations__card-link"
+                                    >Смотреть презентацию PDF</a
+                                >
+                            </div>
+                        </div>
+                        <div class="presentations__card">
+                            <img
+                                src="./assets/img/presentation-1.png"
+                                alt=""
+                                class="presentations__card-img"
+                            />
+                            <div class="presentations__card-overlay">
+                                <img
+                                    src="./assets/img/pdf-icon.svg"
+                                    alt=""
+                                    class="presentations__card-link-icon"
+                                />
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="presentations__card-link"
+                                    >Смотреть презентацию PDF</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="results">
+                <div class="results__container container">
+                    <div class="results__pre-title pre-title">
+                        Услуги для всей семьи
+                    </div>
+                    <h2 class="results__title title">Наши результаты</h2>
+                    <div class="results__slider-container">
+                        <div class="results__slider">
+                            <div class="results__slider-swiper swiper-wrapper">
+                                <div class="results__slide swiper-slide">
+                                    <div class="results__slide-img-wrapper">
+                                        <img
+                                            src="./assets/img/results-1.jpg"
+                                            alt=""
+                                            class="results__slide-img"
+                                        />
+                                        <img
+                                            src="./assets/img/results-2.jpg"
+                                            alt=""
+                                            class="results__slide-img"
+                                        />
+
+                                        <div class="results__slide-label">
+                                            До
+                                        </div>
+                                        <div class="results__slide-label">
+                                            После
+                                        </div>
+                                    </div>
+                                    <div class="results__slide-title">
+                                        Многофункциональные коронки в лечении
+                                        OSB
+                                    </div>
+                                    <div class="results__slide-desc">
+                                        Многофункциональные коронки в лечении
+                                        OSB
+                                    </div>
+                                    <div class="results__slide-works">
+                                        <span>Работа:</span>
+                                        <a href="#" target="_blank">
+                                            Курбанова Махмуда
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="results__slide swiper-slide">
+                                    <div
+                                        class="results__slide-img-wrapper results__slide-img-wrapper--column"
+                                    >
+                                        <img
+                                            src="./assets/img/results-1.jpg"
+                                            alt=""
+                                            class="results__slide-img"
+                                        />
+                                        <img
+                                            src="./assets/img/results-2.jpg"
+                                            alt=""
+                                            class="results__slide-img"
+                                        />
+
+                                        <div class="results__slide-label">
+                                            До
+                                        </div>
+                                        <div class="results__slide-label">
+                                            После
+                                        </div>
+                                    </div>
+                                    <div class="results__slide-title">
+                                        Многофункциональные коронки в лечении
+                                        OSB 2
+                                    </div>
+                                    <div class="results__slide-desc">
+                                        Многофункциональные коронки в лечении
+                                        OSB
+                                    </div>
+                                    <div class="results__slide-works">
+                                        <span>Работа:</span>
+                                        <a href="#" target="_blank">
+                                            Гончар Светлана Викторовна
+                                        </a>
+                                        и
+                                        <a href="#" target="_blank">
+                                            Смирнова Мария Викторовна
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="results__slide swiper-slide">
+                                    <div class="results__slide-img-wrapper">
+                                        <img
+                                            src="./assets/img/results-1.jpg"
+                                            alt=""
+                                            class="results__slide-img"
+                                        />
+                                        <img
+                                            src="./assets/img/results-2.jpg"
+                                            alt=""
+                                            class="results__slide-img"
+                                        />
+
+                                        <div class="results__slide-label">
+                                            До
+                                        </div>
+                                        <div class="results__slide-label">
+                                            После
+                                        </div>
+                                    </div>
+                                    <div class="results__slide-title">
+                                        Профессиональная чистка ротовой полости
+                                    </div>
+                                    <div class="results__slide-desc">
+                                        Профессиональная чистка является
+                                        обязательной частью ухода за ротовой
+                                        полостью. Она позволяет удалить налет,
+                                        зубной камень и другие отложения,
+                                        которые делают улыбку недостаточно
+                                        эстетичной, негативно сказываются на
+                                        состоянии десен и способствуют развитию
+                                        кариеса.
+                                    </div>
+                                    <div class="results__slide-works">
+                                        <span>Работа:</span>
+                                        <a href="#" target="_blank">
+                                            Гончар Светлана Викторовна
+                                        </a>
+                                        и
+                                        <a href="#" target="_blank">
+                                            Смирнова Мария Викторовна
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="results__slide swiper-slide">
+                                    <div class="results__slide-img-wrapper">
+                                        <img
+                                            src="./assets/img/results-1.jpg"
+                                            alt=""
+                                            class="results__slide-img"
+                                        />
+                                        <img
+                                            src="./assets/img/results-2.jpg"
+                                            alt=""
+                                            class="results__slide-img"
+                                        />
+
+                                        <div class="results__slide-label">
+                                            До
+                                        </div>
+                                        <div class="results__slide-label">
+                                            После
+                                        </div>
+                                    </div>
+                                    <div class="results__slide-title">
+                                        Многофункциональные коронки в лечении
+                                        OSB
+                                    </div>
+                                    <div class="results__slide-desc">
+                                        Многофункциональные коронки в лечении
+                                        OSB
+                                    </div>
+                                    <div class="results__slide-works">
+                                        <span>Работа:</span>
+                                        <a href="#" target="_blank">
+                                            Курбанова Махмуда
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="results__slide swiper-slide">
+                                    <div
+                                        class="results__slide-img-wrapper results__slide-img-wrapper--column"
+                                    >
+                                        <img
+                                            src="./assets/img/results-1.jpg"
+                                            alt=""
+                                            class="results__slide-img"
+                                        />
+                                        <img
+                                            src="./assets/img/results-2.jpg"
+                                            alt=""
+                                            class="results__slide-img"
+                                        />
+
+                                        <div class="results__slide-label">
+                                            До
+                                        </div>
+                                        <div class="results__slide-label">
+                                            После
+                                        </div>
+                                    </div>
+                                    <div class="results__slide-title">
+                                        Многофункциональные коронки в лечении
+                                        OSB 2
+                                    </div>
+                                    <div class="results__slide-desc">
+                                        Многофункциональные коронки в лечении
+                                        OSB
+                                    </div>
+                                    <div class="results__slide-works">
+                                        <span>Работа:</span>
+                                        <a href="#" target="_blank">
+                                            Гончар Светлана Викторовна
+                                        </a>
+                                        и
+                                        <a href="#" target="_blank">
+                                            Смирнова Мария Викторовна
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="results__arrows">
+                            <a
+                                href="#"
+                                class="results__arrows-item results__arrows-item--left"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="23"
+                                    height="42"
+                                    viewBox="0 0 23 42"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M22 1.00024L2 21.0002L22 41.0002"
+                                        stroke="#6F7378"
+                                        stroke-width="2"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                href="#"
+                                class="results__arrows-item results__arrows-item--right"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="23"
+                                    height="42"
+                                    viewBox="0 0 23 42"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M1 1L21 21L1 41"
+                                        stroke="#6F7378"
+                                        stroke-width="2"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="button-holder">
+                        <a
+                            href="#"
+                            target="_blank"
+                            class="results__button button-main"
+                        >
+                            НАШИ РАБОТЫ
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="locations container">
+                <div class="locations__pre-title pre-title">География</div>
+                <h2 class="locations__title title">
+                    К нам едут <span> со всей России и мира</span>
+                </h2>
+                <p class="locations__desc">
+                    Каждый день в наши клиники приезжают пациенты из разных
+                    городов России и мира. Чтобы создать максимально комфортные
+                    условия для быстрого и качественного лечения, мы разработали
+                    программу поддержки иногородних пациентов, которым бывает
+                    сложно решиться на поездку в столицу.
+                </p>
+
+                <ul class="locations__list">
+                    <li class="locations__list-item">
+                        Бесплатная удаленная консультация и назначение даты
+                        посещения центра
+                    </li>
+                    <li class="locations__list-item">
+                        Индивидуальное сопровождение во время и после лечения
+                    </li>
+                    <li class="locations__list-item">
+                        Индивидуальное сопровождение во время и после лечения
+                    </li>
+                    <li class="locations__list-item">
+                        Индивидуальное сопровождение во время и после лечения
+                    </li>
+                </ul>
+                <div class="locations__map-container"></div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__group">
+                    <a href="#" class="footer__logo">
+                        <img
+                            src="./assets/img/footer-logo.svg"
+                            alt=""
+                            class="footer__logo-icon"
+                        />
+                    </a>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__title">О нас</div>
+                    <a href="#" class="footer__nav-link">Специалисты </a>
+                    <a href="#" class="footer__nav-link">Цены </a>
+                    <a href="#" class="footer__nav-link">Акции </a>
+                    <a href="#" class="footer__nav-link">Отзывы </a>
+                    <a href="#" class="footer__nav-link">Статьи </a>
+                    <a href="#" class="footer__nav-link">Наши работы </a>
+                    <a href="#" class="footer__nav-link">Контакты </a>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__title">Услуги</div>
+                    <a href="#" class="footer__nav-link"
+                        >Исправление прикуса
+                    </a>
+                    <a href="#" class="footer__nav-link">Имплантация зубов </a>
+                    <a href="#" class="footer__nav-link"
+                        >Хирургическое лечение
+                    </a>
+                    <a href="#" class="footer__nav-link">ДВНЧС </a>
+                    <a href="#" class="footer__nav-link"
+                        >Детская стоматология
+                    </a>
+                    <a href="#" class="footer__nav-link"
+                        >Остеопатическое лечение
+                    </a>
+                    <a href="#" class="footer__nav-link">Массажи </a>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__title">Полезные статьи</div>
+                    <a href="#" class="footer__nav-link"
+                        >Исправление прикуса
+                    </a>
+                    <a href="#" class="footer__nav-link">Имплантация зубов </a>
+                    <a href="#" class="footer__nav-link"
+                        >Хирургическое лечение
+                    </a>
+                    <a href="#" class="footer__nav-link">ДВНЧС </a>
+                    <a href="#" class="footer__nav-link"
+                        >Детская стоматология
+                    </a>
+                    <a href="#" class="footer__nav-link"
+                        >Остеопатическое лечение
+                    </a>
+                    <a href="#" class="footer__nav-link">Массажи </a>
+                </div>
+                <div class="footer__group">
+                    <div class="footer__title">Контакты</div>
+                    <div class="footer__item">
+                        Санкт-Петербург, ул. Оптиков, 51/1
+                    </div>
+                    <a
+                        href="mailto:asgardmed@yandex.ru"
+                        class="footer__nav-link footer__nav-link--address"
+                        >asgardmed@yandex.ru
+                    </a>
+                    <div class="footer__tels">
+                        <a href="tel:+78126170505" class="footer__tel"
+                            >+7 (812) 617-05-05</a
+                        >
+                        <a href="tel:++78129388712" class="footer__tel"
+                            >+7 (812) 938-87-12</a
+                        >
+                    </div>
+                    <div class="footer__subscribe">
+                        <span>Присоединяйтесь:</span>
+                        <a href="#" target="_blank" class="header__social">
+                            <svg
+                                width="35"
+                                height="20"
+                                viewBox="0 0 35 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M32.9449 19.9156C32.7622 19.9387 32.5783 19.9672 32.3945 19.9683C30.5923 19.9716 28.7901 19.9672 26.989 19.9738C26.7385 19.9749 26.5262 19.8816 26.3402 19.7313C25.9638 19.423 25.5764 19.1191 25.2295 18.7769C24.3279 17.8805 23.4492 16.959 22.5542 16.0539C22.2751 15.7719 21.9775 15.5119 21.6842 15.2453C21.5322 15.1016 21.3418 15.0709 21.1448 15.0742C20.8811 15.0807 20.6633 15.2003 20.5594 15.445C20.4642 15.6666 20.3854 15.9068 20.3602 16.1438C20.3165 16.5728 20.3143 17.0039 20.3055 17.4329C20.2957 17.9134 20.2815 18.3973 20.1469 18.8646C20.0867 19.0709 20.0013 19.2804 19.8952 19.4669C19.7092 19.7873 19.4159 19.9617 19.0428 19.9694C17.4693 20.0056 15.8947 20.0286 14.3234 19.9255C14.0323 19.9036 13.7643 19.8114 13.5049 19.6831C12.0387 18.9612 10.7508 18.0023 9.63137 16.8065C8.26906 15.3528 7.03259 13.7938 5.79611 12.2349C4.1318 10.1328 2.69289 7.88379 1.39952 5.5382C0.926815 4.68357 0.470524 3.81686 0.131314 2.8964C-0.0361019 2.4422 -0.0361019 1.9869 0.0897339 1.52942C0.125843 1.39338 0.190402 1.26063 0.26481 1.14104C0.37095 0.965509 0.536177 0.867868 0.747363 0.863479C0.82177 0.862382 0.89946 0.860188 0.973867 0.860188C2.60864 0.860188 4.24122 0.866771 5.8749 0.854702C6.19769 0.852508 6.44499 0.961121 6.66164 1.18054C7.06432 1.58427 7.37727 2.05492 7.65848 2.54423C7.96487 3.07742 8.27125 3.6139 8.54152 4.16683C9.13569 5.38351 9.86444 6.51791 10.6359 7.62378C11.0123 8.16245 11.4193 8.68028 11.81 9.20799C11.9916 9.45374 12.2433 9.54699 12.5333 9.55467C12.8156 9.56454 12.9305 9.44935 12.9414 9.1663C12.9447 9.09828 12.9436 9.03135 12.9436 8.96333C12.9436 7.11363 12.9436 5.26612 12.9414 3.41752C12.9414 3.2738 12.9414 3.12898 12.9272 2.98636C12.8943 2.65613 12.7204 2.46304 12.3943 2.39941C12.2466 2.37089 12.0956 2.35772 11.9457 2.33798C11.4861 2.27764 11.2957 2.08235 11.2475 1.61938C11.1764 0.920528 11.5102 0.375271 12.1634 0.130619C12.4446 0.025298 12.7357 0.00225934 13.0333 0.00335643C14.4897 0.00555062 15.9461 0.00335635 17.4025 0.00445345C17.698 0.00445345 17.9934 -0.0109062 18.2867 0.0154241C18.5942 0.0450457 18.9049 0.0856383 19.2036 0.173406C19.8405 0.357718 20.2092 0.792168 20.2815 1.4614C20.3001 1.62157 20.3044 1.78175 20.3044 1.94192C20.3066 3.06425 20.3066 4.18658 20.3066 5.30891C20.3066 6.49926 20.3055 7.68961 20.3088 8.87995C20.3088 8.99625 20.3187 9.11802 20.3504 9.22883C20.4543 9.58978 20.8461 9.70936 21.1754 9.48226C22.146 8.81193 22.7829 7.87831 23.2731 6.83936C23.7261 5.8794 24.1167 4.88982 24.5424 3.9167C24.8827 3.14544 25.2317 2.37857 25.5873 1.61389C25.6738 1.42409 25.8018 1.25185 25.9211 1.07851C26.0294 0.922722 26.1717 0.854702 26.3719 0.854702C28.487 0.861285 30.5978 0.860188 32.7118 0.857994C33.2294 0.857994 33.6397 1.06864 33.9625 1.46249C34.0763 1.60292 34.1234 1.76749 34.1529 1.94851C34.2788 2.7834 33.9932 3.51077 33.5949 4.21181C33.2174 4.87446 32.7687 5.48554 32.2807 6.06591C31.2697 7.26613 30.2783 8.48061 29.4117 9.79164C29.1884 10.1284 28.998 10.4872 28.7945 10.835C28.6446 11.0895 28.6643 11.3342 28.8525 11.5613C29.2344 12.022 29.6042 12.496 30.0058 12.9359C30.96 13.9847 31.9382 15.0083 32.8979 16.0517C33.2053 16.3874 33.4833 16.7472 33.7689 17.1027C33.863 17.2201 33.933 17.3572 34.0249 17.4768C34.7416 18.4049 33.8487 19.7961 32.9449 19.9156Z"
+                                    fill="#BDBDBD"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#" class="consult-button"> Записаться на приём </a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="container">
+                    <p>
+                        ©2023 Медицинский центр «Асгард».
+                        <a href="#" target="_blank">
+                            Политика конфиденциальности
+                        </a>
+                        <br />
+                        Цены, представленные на сайте, являются справочными и не
+                        являются публичной офертой. С точной стоимостью на
+                        услуги , вы можете ознакомиться по телефону 617-05–05.
+                        <br />
+                        Все материалы, размещенные на данном сайте разрешается
+                        использовать/копировать/размещать в открытом доступе на
+                        иных ресурсах только с письменного согласия
+                        ООО «Асгард Мед»
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+            integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <script src="./assets/scripts.js"></script>
+    </body>
+</html>
