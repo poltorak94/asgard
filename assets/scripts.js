@@ -29,7 +29,10 @@ $(document).ready(function () {
                 el: ".main-slider__pagination",
                 clickable: true,
             },
-
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             navigation: {
                 nextEl: ".main-slider__arrow--right",
                 prevEl: ".main-slider__arrow--left",
@@ -84,7 +87,10 @@ $(document).ready(function () {
         let deviceSlider = new Swiper(".device__slider", {
             loop: true,
             autoHeight: true,
-
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".device__controls-pagination",
                 clickable: true,
@@ -110,4 +116,70 @@ $(document).ready(function () {
             },
         });
     }
+
+    //карта
+    tippy(".map-point");
+
+    //слайдер рабочих
+    const workers = $(".workers__slider");
+    if (workers.length) {
+        let workersSlider = new Swiper(".workers__slider", {
+            autoHeight: true,
+            slidesPerView: 4,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".workers__arrows-item--right",
+                prevEl: ".workers__arrows-item--left",
+            },
+        });
+    }
+
+    //слайдер соц сети
+    const socials = $(".socials");
+    if (socials.length) {
+        let socialsSlider = new Swiper(".socials__slider", {
+            autoHeight: true,
+            slidesPerView: 5,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".socials__arrows-item--right",
+                prevEl: ".socials__arrows-item--left",
+            },
+        });
+    }
+
+    //слайдер отзывы
+    const reviews = $(".reviews");
+
+    if (reviews.length) {
+        let reviewsSlider = new Swiper(".reviews__slider", {
+            slidesPerView: 5,
+            // loop: true,
+            spaceBetween: 80,
+            // navigation: {
+            //     nextEl: ".socials__arrows-item--right",
+            //     prevEl: ".socials__arrows-item--left",
+            // },
+        });
+    }
+
+    //фикс хедер
+    let headerPlaceholder = $(".header__placeholder");
+    const headerH = $(".header__container").height();
+
+    $(headerPlaceholder).css("height", headerH + "px");
+
+    $(window).scroll(function (event) {
+        let scroll = $(window).scrollTop();
+        if (scroll > headerH) {
+            $(".header__top").slideUp();
+            $(".header__bottom").slideUp();
+        } else {
+            $(".header__top").slideDown();
+            $(".header__bottom").slideDown();
+        }
+    });
+
+    //анимация
+    new WOW().init();
 });
