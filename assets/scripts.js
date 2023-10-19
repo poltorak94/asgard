@@ -29,10 +29,10 @@ $(document).ready(function () {
                 el: ".main-slider__pagination",
                 clickable: true,
             },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 5000,
+            //     disableOnInteraction: false,
+            // },
             navigation: {
                 nextEl: ".main-slider__arrow--right",
                 prevEl: ".main-slider__arrow--left",
@@ -44,6 +44,7 @@ $(document).ready(function () {
     const tabs = $(".tabs");
     if (tabs.length) {
         let firstSrc = $(".tabs__nav-item:first").attr("data-src");
+        let mainTab;
         $(".tabs__item:first")
             .find(".tabs__item-group-video-iframe")
             .attr("src", firstSrc);
@@ -52,9 +53,14 @@ $(document).ready(function () {
             e.preventDefault();
             let navId = $(this).attr("data-id");
             let videoSrc = $(this).attr("data-src");
+            let tabItem = $(this);
 
             $(".tabs__nav-item").removeClass("tabs__nav-item--active");
             $(this).addClass("tabs__nav-item--active");
+            $(".tabs__nav-item")
+                .closest(".tabs__nav")
+                .find(".tabs__item-grid")
+                .remove();
 
             $(".tabs__item-group-video-holder").removeClass(
                 "tabs__item-group-video-holder--hidden"
@@ -70,8 +76,13 @@ $(document).ready(function () {
                 if (tabId == navId) {
                     $(this).show();
                     iframe.attr("src", videoSrc);
+                    mainTab = $($(".tabs__item[data-id=" + tabId + "]").html());
                 }
             });
+
+            if ($(window).width() < 990) {
+                tabItem.after(mainTab);
+            }
         });
 
         $(".tabs__item-group-video-play").on("click", function (e) {
@@ -79,6 +90,10 @@ $(document).ready(function () {
             let container = $(this).closest(".tabs__item-group-video-holder");
             container.addClass("tabs__item-group-video-holder--hidden");
         });
+
+        if ($(window).width() < 990) {
+            $(".tabs__nav-item").removeClass("tabs__nav-item--active");
+        }
     }
 
     //слайдер оборудования
@@ -86,11 +101,14 @@ $(document).ready(function () {
     if (device.length) {
         let deviceSlider = new Swiper(".device__slider", {
             loop: true,
-            autoHeight: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
+            // autoHeight: true,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
             pagination: {
                 el: ".device__controls-pagination",
                 clickable: true,
@@ -110,15 +128,36 @@ $(document).ready(function () {
             autoHeight: true,
             slidesPerView: 3,
             spaceBetween: 20,
+            observer: true,
             navigation: {
                 nextEl: ".results__arrows-item--right",
                 prevEl: ".results__arrows-item--left",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                990: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1366: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
             },
         });
     }
 
     //карта
-    tippy(".map-point");
+    tippy(".map-point", {
+        arrow: false,
+    });
 
     //слайдер рабочих
     const workers = $(".workers__slider");
@@ -130,6 +169,24 @@ $(document).ready(function () {
             navigation: {
                 nextEl: ".workers__arrows-item--right",
                 prevEl: ".workers__arrows-item--left",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                990: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1366: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
             },
         });
     }
@@ -145,6 +202,25 @@ $(document).ready(function () {
                 nextEl: ".socials__arrows-item--right",
                 prevEl: ".socials__arrows-item--left",
             },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+
+                990: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1366: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
         });
     }
 
@@ -153,7 +229,7 @@ $(document).ready(function () {
 
     if (reviews.length) {
         let reviewsSlider = new Swiper(".reviews__slider", {
-            slidesPerView: 5,
+            slidesPerView: "auto",
             // loop: true,
             spaceBetween: 80,
             // navigation: {
@@ -166,20 +242,48 @@ $(document).ready(function () {
     //фикс хедер
     let headerPlaceholder = $(".header__placeholder");
     const headerH = $(".header__container").height();
-
     $(headerPlaceholder).css("height", headerH + "px");
 
-    $(window).scroll(function (event) {
-        let scroll = $(window).scrollTop();
-        if (scroll > headerH) {
-            $(".header__top").slideUp();
-            $(".header__bottom").slideUp();
-        } else {
-            $(".header__top").slideDown();
-            $(".header__bottom").slideDown();
-        }
-    });
+    if ($(window).width() >= 990) {
+        $(window).scroll(function (event) {
+            let scroll = $(window).scrollTop();
+            if (scroll > headerH) {
+                $(".header__top").slideUp();
+                $(".header__bottom").slideUp();
+                $(".header").addClass("header--active");
+            } else {
+                $(".header__top").slideDown();
+                $(".header__bottom").slideDown();
+                $(".header").removeClass("header--active");
+            }
+        });
+    }
 
     //анимация
-    new WOW().init();
+    if ($(window).width() > 1365) {
+        new WOW().init();
+    }
+
+    //burger-menu
+    $(".burger__menu").on("click", function (e) {
+        e.preventDefault();
+        $(".header__top, .header__bottom").slideToggle();
+    });
+
+    $(".show-all-list").on("click", function (e) {
+        e.preventDefault();
+        $(this)
+            .closest(".device__slide-group")
+            .find(".device__slide-desc")
+            .slideToggle();
+        $(this)
+            .closest(".device__slide-group")
+            .find(".device__slide-list-title")
+            .slideToggle();
+        $(this)
+            .closest(".device__slide-group")
+            .find(".device__slide-list")
+            .slideToggle();
+        $(this).toggleClass("show-all-list--active");
+    });
 });

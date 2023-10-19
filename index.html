@@ -106,19 +106,21 @@
                                     alt=""
                                     class="header__tel-icon"
                                 />
-                                <div class="header__tels-items">
-                                    <a
-                                        href="tel:+78126170505"
-                                        class="header__tel"
-                                    >
-                                        +7 (812) 617-05-05
-                                    </a>
-                                    <a
-                                        href="tel:+78129388712"
-                                        class="header__tel"
-                                    >
-                                        +7 (812) 938-87-12
-                                    </a>
+                                <div class="heaer__tels-group">
+                                    <div class="header__tels-items">
+                                        <a
+                                            href="tel:+78126170505"
+                                            class="header__tel"
+                                        >
+                                            +7 (812) 617-05-05
+                                        </a>
+                                        <a
+                                            href="tel:+78129388712"
+                                            class="header__tel"
+                                        >
+                                            +7 (812) 938-87-12
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <form action="#" class="header__search-form">
@@ -153,6 +155,13 @@
                             <a href="#" class="consult-button">
                                 Записаться на приём
                             </a>
+                            <a href="#" class="burger__menu">
+                                <img
+                                    src="./assets/img/burger.svg"
+                                    alt=""
+                                    class=""
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -163,7 +172,7 @@
                             <div
                                 class="header__nav-item header__nav-item--dropdown"
                             >
-                                <a href="#" class="header__nav-item-link">
+                                <span class="header__nav-item-link">
                                     О центре
                                     <svg
                                         width="12"
@@ -180,7 +189,7 @@
                                             stroke-linejoin="round"
                                         />
                                     </svg>
-                                </a>
+                                </span>
 
                                 <div class="header__dropdown-menu">
                                     <div
@@ -212,7 +221,7 @@
                             <div
                                 class="header__nav-item header__nav-item--dropdown"
                             >
-                                <a href="#" class="header__nav-item-link">
+                                <span class="header__nav-item-link">
                                     Услуги
                                     <svg
                                         width="12"
@@ -229,7 +238,7 @@
                                             stroke-linejoin="round"
                                         />
                                     </svg>
-                                </a>
+                                </span>
                                 <div class="header__dropdown-menu">
                                     <div
                                         class="header__dropdown-menu-container"
@@ -315,7 +324,7 @@
                             <div class="main-slider__wrapper swiper-wrapper">
                                 <div class="main-slider__slide swiper-slide">
                                     <img
-                                        src="./assets/img/swiper-slide.png"
+                                        src="./assets/img/swiper-slide.jpg"
                                         alt=""
                                         class="main-slider__slide-image"
                                     />
@@ -354,7 +363,7 @@
                                 </div>
                                 <div class="main-slider__slide swiper-slide">
                                     <img
-                                        src="./assets/img/swiper-slide-2.png"
+                                        src="./assets/img/swiper-slide.jpg"
                                         alt=""
                                         class="main-slider__slide-image"
                                     />
@@ -472,79 +481,86 @@
                         class="about__group wow fadeInUp"
                         data-wow-duration="0.3s"
                     >
-                        <p class="about__desc">
-                            Мы придерживаемся холистической философии, основной
-                            принцип которой гласит:
-                        </p>
-                        <p class="about__desc about__desc--title">
-                            «Целое есть нечто большее, чем простая сумма
-                            отдельных частей».
-                        </p>
-                        <p class="about__desc">
-                            Организм человека — это сложная единая система, в
-                            которой все взаимосвязано. Нельзя отделить
-                            зубочелюстную систему, позвоночник или ЛОР-органы от
-                            всего тела. Нельзя лечить дисфункцию ВНЧС отдельно
-                            от всего организма. Мы учитываем это в своей работе.
-                        </p>
-                        <a href="#" target="_blank" class="button-tour">
-                            Смотреть <span> 3D-тур</span>
-                            <img src="./assets/img/cube.png" alt="" />
-                        </a>
-                        <ul class="about__list">
-                            <li
-                                class="about__list-item wow fadeInRight"
+                        <div class="group-1">
+                            <p class="about__desc">
+                                Мы придерживаемся холистической философии,
+                                основной принцип которой гласит:
+                            </p>
+                            <p class="about__desc about__desc--title">
+                                «Целое есть нечто большее, чем простая сумма
+                                отдельных частей».
+                            </p>
+                            <p class="about__desc">
+                                Организм человека — это сложная единая система,
+                                в которой все взаимосвязано. Нельзя отделить
+                                зубочелюстную систему, позвоночник или
+                                ЛОР-органы от всего тела. Нельзя лечить
+                                дисфункцию ВНЧС отдельно от всего организма. Мы
+                                учитываем это в своей работе.
+                            </p>
+                            <a href="#" target="_blank" class="button-tour">
+                                Смотреть <span> 3D-тур</span>
+                                <img src="./assets/img/cube.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="group-2">
+                            <ul class="about__list">
+                                <li
+                                    class="about__list-item wow fadeInRight"
+                                    data-wow-duration="0.3s"
+                                    data-wow-delay="0.2s"
+                                >
+                                    Клиника площадью 350 квадратных метров
+                                </li>
+                                <li
+                                    class="about__list-item wow fadeInRight"
+                                    data-wow-delay="0.4s"
+                                    data-wow-duration="0.3s"
+                                >
+                                    7 стоматологических кабинетов
+                                </li>
+                                <li
+                                    class="about__list-item wow fadeInRight"
+                                    data-wow-delay="0.6s"
+                                    data-wow-duration="0.3s"
+                                >
+                                    2 остеопатических (физиотерапевтических,
+                                    массажных)
+                                </li>
+                                <li
+                                    class="about__list-item wow fadeInRight"
+                                    data-wow-delay="0.8s"
+                                    data-wow-duration="0.3s"
+                                >
+                                    Косметологический кабинет
+                                </li>
+                                <li
+                                    class="about__list-item wow fadeInRight"
+                                    data-wow-delay="1s"
+                                    data-wow-duration="0.3s"
+                                >
+                                    Зуботехническая лаборатория
+                                </li>
+                                <li
+                                    class="about__list-item wow fadeInRight"
+                                    data-wow-delay="1.2s"
+                                    data-wow-duration="0.3s"
+                                >
+                                    Современный рентген кабинет
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group-3">
+                            <a
+                                href="#"
+                                target="_blank"
+                                class="button-main wow fadeInRight"
+                                data-wow-delay="1.4s"
                                 data-wow-duration="0.3s"
-                                data-wow-delay="0.2s"
                             >
-                                Клиника площадью 350 квадратных метров
-                            </li>
-                            <li
-                                class="about__list-item wow fadeInRight"
-                                data-wow-delay="0.4s"
-                                data-wow-duration="0.3s"
-                            >
-                                7 стоматологических кабинетов
-                            </li>
-                            <li
-                                class="about__list-item wow fadeInRight"
-                                data-wow-delay="0.6s"
-                                data-wow-duration="0.3s"
-                            >
-                                2 остеопатических (физиотерапевтических,
-                                массажных)
-                            </li>
-                            <li
-                                class="about__list-item wow fadeInRight"
-                                data-wow-delay="0.8s"
-                                data-wow-duration="0.3s"
-                            >
-                                Косметологический кабинет
-                            </li>
-                            <li
-                                class="about__list-item wow fadeInRight"
-                                data-wow-delay="1s"
-                                data-wow-duration="0.3s"
-                            >
-                                Зуботехническая лаборатория
-                            </li>
-                            <li
-                                class="about__list-item wow fadeInRight"
-                                data-wow-delay="1.2s"
-                                data-wow-duration="0.3s"
-                            >
-                                Современный рентген кабинет
-                            </li>
-                        </ul>
-                        <a
-                            href="#"
-                            target="_blank"
-                            class="button-main wow fadeInRight"
-                            data-wow-delay="1.4s"
-                            data-wow-duration="0.3s"
-                        >
-                            ПОДРОБНЕЕ
-                        </a>
+                                ПОДРОБНЕЕ
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -557,7 +573,7 @@
                     Услуги для всей семьи
                 </div>
                 <h2
-                    class="tabs__title title pre-title wow fadeInUp"
+                    class="tabs__title title wow fadeInUp"
                     data-wow-delay="0.3s"
                     data-wow-duration="0.3s"
                 >
@@ -592,6 +608,7 @@
                         </svg>
                         Лечение дисфункции ВНЧС
                     </a>
+
                     <a
                         href="#"
                         class="tabs__nav-item"
@@ -1796,6 +1813,12 @@
                                 <div
                                     class="device__slide-group device__slide-group--img"
                                 >
+                                    <div
+                                        class="device__slide-title device__slide-title--mob"
+                                    >
+                                        RAYSCAN, Symphony Alpha SC — томограф с
+                                        цефалостатом
+                                    </div>
                                     <img
                                         src="./assets/img/device-slide.png"
                                         alt=""
@@ -1845,6 +1868,7 @@
                                             Латеральная проекция ВНЧС.
                                         </li>
                                     </ul>
+                                    <a href="#" class="show-all-list"> </a>
                                     <a
                                         href="#"
                                         target="_blank"
@@ -1857,6 +1881,12 @@
                         </div>
                         <div class="device__slide swiper-slide">
                             <div class="device__slide-grid">
+                                <div
+                                    class="device__slide-title device__slide-title--mob"
+                                >
+                                    RAYSCAN, Symphony Alpha SC — томограф с
+                                    цефалостатом
+                                </div>
                                 <div
                                     class="device__slide-group device__slide-group--img"
                                 >
@@ -1909,6 +1939,7 @@
                                             Латеральная проекция ВНЧС.
                                         </li>
                                     </ul>
+                                    <a href="#" class="show-all-list"> </a>
                                     <a
                                         href="#"
                                         target="_blank"
@@ -1921,6 +1952,12 @@
                         </div>
                         <div class="device__slide swiper-slide">
                             <div class="device__slide-grid">
+                                <div
+                                    class="device__slide-title device__slide-title--mob"
+                                >
+                                    RAYSCAN, Symphony Alpha SC — томограф с
+                                    цефалостатом
+                                </div>
                                 <div
                                     class="device__slide-group device__slide-group--img"
                                 >
@@ -1973,6 +2010,8 @@
                                             Латеральная проекция ВНЧС.
                                         </li>
                                     </ul>
+                                    <a href="#" class="show-all-list"> </a>
+
                                     <a
                                         href="#"
                                         target="_blank"
