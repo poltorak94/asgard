@@ -1896,7 +1896,7 @@ body {
         height: 250px;
     }
     .workers__slide-img-wrapper {
-        height: 350px;
+        height: 390px;
     }
     .footer .consult-button {
         font-size: 16px;
@@ -2461,6 +2461,19 @@ body {
     .socials__slider {
         margin: 0;
     }
+    .socials__arrows {
+        display: none;
+    }
+    .locations__map-container {
+        min-width: 780px;
+        width: 100%;
+        padding-bottom: 0;
+        height: 560px;
+    }
+    .locations__map-inner {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
 }
 
 .main-slider__slide-image-mob {
@@ -2578,6 +2591,19 @@ body {
         top: 0;
         object-fit: cover;
         max-height: 490px;
+    }
+    .contacts__info {
+        padding: 20px 15px;
+        max-width: 240px;
+    }
+    .contacts {
+        .button-main {
+            min-width: auto;
+            width: 100%;
+            font-size: 14px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
     }
 }
 

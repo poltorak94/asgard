@@ -57,6 +57,7 @@ $(document).ready(function () {
 
             $(".tabs__nav-item").removeClass("tabs__nav-item--active");
             $(this).addClass("tabs__nav-item--active");
+
             $(".tabs__nav-item")
                 .closest(".tabs__nav")
                 .find(".tabs__item-grid")
@@ -249,8 +250,8 @@ $(document).ready(function () {
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
+                    slidesPerView: 2.1,
+                    spaceBetween: 10,
                 },
                 768: {
                     slidesPerView: 3,
