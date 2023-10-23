@@ -16,6 +16,8 @@
             href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         />
         <link rel="stylesheet" href="./libs/wow/animate.min.css" />
+        <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
+
         <link rel="stylesheet" href="./assets/style.css" />
     </head>
     <body>
@@ -156,11 +158,8 @@
                                 Записаться на приём
                             </a>
                             <a href="#" class="burger__menu">
-                                <img
-                                    src="./assets/img/burger.svg"
-                                    alt=""
-                                    class=""
-                                />
+                                <span></span>
+                                <span></span>
                             </a>
                         </div>
                     </div>
@@ -328,6 +327,11 @@
                                         alt=""
                                         class="main-slider__slide-image"
                                     />
+                                    <img
+                                        src="./assets/img/mob-slide.png"
+                                        alt=""
+                                        class="main-slider__slide-image-mob"
+                                    />
                                     <div
                                         class="main-slider__slide-container container"
                                     >
@@ -366,6 +370,11 @@
                                         src="./assets/img/swiper-slide.jpg"
                                         alt=""
                                         class="main-slider__slide-image"
+                                    />
+                                    <img
+                                        src="./assets/img/mob-slide.png"
+                                        alt=""
+                                        class="main-slider__slide-image-mob"
                                     />
                                     <div
                                         class="main-slider__slide-container container"
@@ -506,45 +515,45 @@
                         <div class="group-2">
                             <ul class="about__list">
                                 <li
-                                    class="about__list-item wow fadeInRight"
-                                    data-wow-duration="0.3s"
-                                    data-wow-delay="0.2s"
+                                    class="about__list-item wow fadeIn"
+                                    data-wow-duration="0.4s"
+                                    data-wow-delay="0.4s"
                                 >
                                     Клиника площадью 350 квадратных метров
                                 </li>
                                 <li
-                                    class="about__list-item wow fadeInRight"
-                                    data-wow-delay="0.4s"
-                                    data-wow-duration="0.3s"
+                                    class="about__list-item wow fadeIn"
+                                    data-wow-delay="0.8s"
+                                    data-wow-duration="0.4s"
                                 >
                                     7 стоматологических кабинетов
                                 </li>
                                 <li
-                                    class="about__list-item wow fadeInRight"
-                                    data-wow-delay="0.6s"
-                                    data-wow-duration="0.3s"
+                                    class="about__list-item wow fadeIn"
+                                    data-wow-delay="1.2s"
+                                    data-wow-duration="0.4s"
                                 >
                                     2 остеопатических (физиотерапевтических,
                                     массажных)
                                 </li>
                                 <li
-                                    class="about__list-item wow fadeInRight"
-                                    data-wow-delay="0.8s"
-                                    data-wow-duration="0.3s"
+                                    class="about__list-item wow fadeIn"
+                                    data-wow-delay="1.6s"
+                                    data-wow-duration="0.4s"
                                 >
                                     Косметологический кабинет
                                 </li>
                                 <li
-                                    class="about__list-item wow fadeInRight"
-                                    data-wow-delay="1s"
-                                    data-wow-duration="0.3s"
+                                    class="about__list-item wow fadeIn"
+                                    data-wow-delay="2s"
+                                    data-wow-duration="0.4s"
                                 >
                                     Зуботехническая лаборатория
                                 </li>
                                 <li
-                                    class="about__list-item wow fadeInRight"
-                                    data-wow-delay="1.2s"
-                                    data-wow-duration="0.3s"
+                                    class="about__list-item wow fadeIn"
+                                    data-wow-delay="2.4s"
+                                    data-wow-duration="0.4s"
                                 >
                                     Современный рентген кабинет
                                 </li>
@@ -554,9 +563,9 @@
                             <a
                                 href="#"
                                 target="_blank"
-                                class="button-main wow fadeInRight"
-                                data-wow-delay="1.4s"
-                                data-wow-duration="0.3s"
+                                class="button-main wow fadeIn"
+                                data-wow-delay="2.8s"
+                                data-wow-duration="0.4s"
                             >
                                 ПОДРОБНЕЕ
                             </a>
@@ -567,21 +576,21 @@
             <section class="tabs container">
                 <div
                     class="tabs__pretitle pre-title wow fadeInUp"
-                    data-wow-delay="0.3s"
-                    data-wow-duration="0.3s"
+                    data-wow-delay="0.5s"
+                    data-wow-duration="1s"
                 >
                     Услуги для всей семьи
                 </div>
                 <h2
                     class="tabs__title title wow fadeInUp"
-                    data-wow-delay="0.3s"
-                    data-wow-duration="0.3s"
+                    data-wow-delay="0.5s"
+                    data-wow-duration="1s"
                 >
                     Бережно решаем проблемы любой сложности
                 </h2>
                 <div
                     class="tabs__nav wow fadeInUp"
-                    data-wow-delay="0.5s"
+                    data-wow-delay="1s"
                     data-wow-duration="0.3s"
                 >
                     <a
@@ -1791,10 +1800,7 @@
                     </a>
                 </div>
             </section>
-            <section
-                class="device container wow fadeInUp"
-                data-wow-duration="0.3s"
-            >
+            <section class="device container">
                 <div class="device__pretitle pre-title">Наше оборудование</div>
                 <h2 class="device__title title">
                     Современное цифровое оборудование
@@ -2061,16 +2067,10 @@
             <section class="presentations container">
                 <div class="presentations__grid">
                     <div class="presentations__group">
-                        <h3
-                            class="presentation__title title title--2 wow fadeInLeft"
-                            data-wow-duration="0.3s"
-                        >
+                        <h3 class="presentation__title title title--2">
                             Диагностическое заключение для пациентов
                         </h3>
-                        <p
-                            class="presentations__desc wow fadeInLeft"
-                            data-wow-duration="0.3s"
-                        >
+                        <p class="presentations__desc">
                             В нашем медицинском центре работают
                             врачи-специалисты (челюстно-лицевые хирурги,
                             имплантологи) с большим практическим опытом с
@@ -2078,46 +2078,28 @@
                             городских больницах...
                         </p>
                         <ul class="presentations__list">
-                            <li
-                                class="presentations__list-item wow fadeInLeft"
-                                data-wow-delay="0.3s"
-                            >
+                            <li class="presentations__list-item">
                                 Преимущества
                             </li>
-                            <li
-                                class="presentations__list-item wow fadeInLeft"
-                                data-wow-delay="0.6s"
-                            >
+                            <li class="presentations__list-item">
                                 Преимущества
                             </li>
-                            <li
-                                class="presentations__list-item wow fadeInLeft"
-                                data-wow-delay="0.8s"
-                            >
+                            <li class="presentations__list-item">
                                 Преимущества
                             </li>
                         </ul>
-                        <a
-                            href="#"
-                            target="_blank"
-                            class="button-main wow fadeInLeft"
-                            data-wow-delay="1s"
-                        >
+                        <a href="#" target="_blank" class="button-main">
                             Смотреть презентацию <strong> PDF</strong>
                         </a>
                     </div>
-                    <div
-                        class="presentations__group wow fadeInUp"
-                        data-wow-delay="0.8s"
-                        data-wow-duration="0.5s"
-                    >
+                    <div class="presentations__group">
                         <div class="presentations__card">
                             <img
                                 src="./assets/img/presentation-1.png"
                                 alt=""
                                 class="presentations__card-img"
                             />
-                            <div class="presentations__card-overlay">
+                            <!-- <div class="presentations__card-overlay">
                                 <img
                                     src="./assets/img/pdf-icon.svg"
                                     alt=""
@@ -2129,7 +2111,7 @@
                                     class="presentations__card-link"
                                     >Смотреть презентацию PDF</a
                                 >
-                            </div>
+                            </div> -->
                         </div>
                         <div class="presentations__card">
                             <img
@@ -2137,7 +2119,7 @@
                                 alt=""
                                 class="presentations__card-img"
                             />
-                            <div class="presentations__card-overlay">
+                            <!-- <div class="presentations__card-overlay">
                                 <img
                                     src="./assets/img/pdf-icon.svg"
                                     alt=""
@@ -2149,16 +2131,12 @@
                                     class="presentations__card-link"
                                     >Смотреть презентацию PDF</a
                                 >
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </section>
-            <section
-                class="results wow fadeInUp"
-                data-wow-delay="0.5s"
-                data-wow-duration="0.3s"
-            >
+            <section class="results">
                 <div class="results__container container">
                     <div class="results__pre-title pre-title">
                         Услуги для всей семьи
@@ -2415,11 +2393,7 @@
                     </div>
                 </div>
             </section>
-            <section
-                class="locations container wow fadeInUp"
-                data-wow-duration="0.3s"
-                data-wow-delay="0.5s"
-            >
+            <section class="locations container">
                 <div class="locations__pre-title pre-title">География</div>
                 <h2 class="locations__title title">
                     К нам едут <span> со всей России и мира</span>
@@ -2648,11 +2622,7 @@
                     </span>
                 </div>
             </section>
-            <section
-                class="workers container wow fadeInUp"
-                data-wow-duration="0.3s"
-                data-wow-delay="0.5s"
-            >
+            <section class="workers container">
                 <div class="workers__pre-title pre-title">
                     Главное условие качественного результата – это золотые руки
                     профессионала
@@ -2865,11 +2835,257 @@
                     </a>
                 </div>
             </section>
-            <section
-                class="contacts container wow fadeInUp"
-                data-wow-duration="0.3s"
-                data-wow-delay="0.5s"
-            >
+            <section class="gallery">
+                <div class="gallery__inner">
+                    <div class="gallery__container container">
+                        <div class="gallery__swiper swiper-wrapper">
+                            <div
+                                class="gallery__item gallery__item--1 swiper-slide"
+                            >
+                                <a
+                                    href="./assets/img/g-1.jpg"
+                                    target="_blank"
+                                    class="gallery__link"
+                                    data-fancybox="gallery"
+                                >
+                                    <img
+                                        src="./assets/img/g-1.jpg"
+                                        alt=""
+                                        class="gallery__img"
+                                    />
+                                    <span class="gallery__item-overlay">
+                                        <img
+                                            src="./assets/img/full-size.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </a>
+                            </div>
+                            <div
+                                class="gallery__item gallery__item--2 swiper-slide"
+                            >
+                                <a
+                                    href="./assets/img/g-2.jpg"
+                                    target="_blank"
+                                    class="gallery__link"
+                                    data-fancybox="gallery"
+                                >
+                                    <img
+                                        src="./assets/img/g-2.jpg"
+                                        alt=""
+                                        class="gallery__img"
+                                    />
+                                    <span class="gallery__item-overlay">
+                                        <img
+                                            src="./assets/img/full-size.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </a>
+                                <a
+                                    href="./assets/img/g3.jpg"
+                                    target="_blank"
+                                    class="gallery__link"
+                                    data-fancybox="gallery"
+                                >
+                                    <img
+                                        src="./assets/img/g3.jpg"
+                                        alt=""
+                                        class="gallery__img"
+                                    />
+                                    <span class="gallery__item-overlay">
+                                        <img
+                                            src="./assets/img/full-size.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </a>
+                                <a
+                                    href="./assets/img/g-4.jpg"
+                                    target="_blank"
+                                    class="gallery__link"
+                                    data-fancybox="gallery"
+                                >
+                                    <img
+                                        src="./assets/img/g-4.jpg"
+                                        alt=""
+                                        class="gallery__img"
+                                    />
+                                    <span class="gallery__item-overlay">
+                                        <img
+                                            src="./assets/img/full-size.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </a>
+                            </div>
+                            <div
+                                class="gallery__item gallery__item--3 swiper-slide"
+                            >
+                                <a
+                                    href="./assets/img/g-5.jpg"
+                                    target="_blank"
+                                    class="gallery__link"
+                                    data-fancybox="gallery"
+                                >
+                                    <img
+                                        src="./assets/img/g-5.jpg"
+                                        alt=""
+                                        class="gallery__img"
+                                    />
+                                    <span class="gallery__item-overlay">
+                                        <img
+                                            src="./assets/img/full-size.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </a>
+                            </div>
+                            <div
+                                class="gallery__item gallery__item--1 swiper-slide"
+                            >
+                                <a
+                                    href="./assets/img/g-1.jpg"
+                                    target="_blank"
+                                    class="gallery__link"
+                                    data-fancybox="gallery"
+                                >
+                                    <img
+                                        src="./assets/img/g-1.jpg"
+                                        alt=""
+                                        class="gallery__img"
+                                    />
+                                    <span class="gallery__item-overlay">
+                                        <img
+                                            src="./assets/img/full-size.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </a>
+                            </div>
+                            <div
+                                class="gallery__item gallery__item--2 swiper-slide"
+                            >
+                                <a
+                                    href="./assets/img/g-2.jpg"
+                                    target="_blank"
+                                    class="gallery__link"
+                                    data-fancybox="gallery"
+                                >
+                                    <img
+                                        src="./assets/img/g-2.jpg"
+                                        alt=""
+                                        class="gallery__img"
+                                    />
+                                    <span class="gallery__item-overlay">
+                                        <img
+                                            src="./assets/img/full-size.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </a>
+                                <a
+                                    href="./assets/img/g3.jpg"
+                                    target="_blank"
+                                    class="gallery__link"
+                                    data-fancybox="gallery"
+                                >
+                                    <img
+                                        src="./assets/img/g3.jpg"
+                                        alt=""
+                                        class="gallery__img"
+                                    />
+                                    <span class="gallery__item-overlay">
+                                        <img
+                                            src="./assets/img/full-size.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </a>
+                                <a
+                                    href="./assets/img/g-4.jpg"
+                                    target="_blank"
+                                    class="gallery__link"
+                                    data-fancybox="gallery"
+                                >
+                                    <img
+                                        src="./assets/img/g-4.jpg"
+                                        alt=""
+                                        class="gallery__img"
+                                    />
+                                    <span class="gallery__item-overlay">
+                                        <img
+                                            src="./assets/img/full-size.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </a>
+                            </div>
+                            <div
+                                class="gallery__item gallery__item--3 swiper-slide"
+                            >
+                                <a
+                                    href="./assets/img/g-5.jpg"
+                                    target="_blank"
+                                    class="gallery__link"
+                                    data-fancybox="gallery"
+                                >
+                                    <img
+                                        src="./assets/img/g-5.jpg"
+                                        alt=""
+                                        class="gallery__img"
+                                    />
+                                    <span class="gallery__item-overlay">
+                                        <img
+                                            src="./assets/img/full-size.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery__arrows">
+                            <a
+                                href="#"
+                                class="gallery__arrow gallery__arrow--left"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="23"
+                                    height="42"
+                                    viewBox="0 0 23 42"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M22 1.00024L2 21.0002L22 41.0002"
+                                        stroke="#6F7378"
+                                        stroke-width="2"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                href="#"
+                                class="gallery__arrow gallery__arrow--right"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="23"
+                                    height="42"
+                                    viewBox="0 0 23 42"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M1 1L21 21L1 41"
+                                        stroke="#6F7378"
+                                        stroke-width="2"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts container">
                 <h2 class="contacts__title title">Как нас найти</h2>
                 <div class="contacts__map" id="contacts-map">
                     <div class="contacts__info">
@@ -2903,11 +3119,7 @@
                     </iframe>
                 </div>
             </section>
-            <section
-                class="socials container wow fadeInUp"
-                data-wow-duration="0.3s"
-                data-wow-delay="0.5s"
-            >
+            <section class="socials container">
                 <div class="socials__pre-title pre-title">Всегда на связи</div>
                 <h2 class="socials__title title">Мы в социальных сетях</h2>
                 <div class="socials__slider">
@@ -3163,11 +3375,7 @@
                     </a>
                 </div>
             </section>
-            <section
-                class="reviews container wow fadeInUp"
-                data-wow-duration="0.3s"
-                data-wow-delay="0.5s"
-            >
+            <section class="reviews container">
                 <div class="reviews__pre-title pre-title">
                     Что о нас говорят
                 </div>
@@ -3463,7 +3671,7 @@
         <script src="https://unpkg.com/tippy.js@6"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script src="./libs/wow/wow.min.js"></script>
-
+        <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
         <script src="./assets/scripts.js"></script>
     </body>
 </html>

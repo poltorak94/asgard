@@ -82,6 +82,17 @@ $(document).ready(function () {
 
             if ($(window).width() < 990) {
                 tabItem.after(mainTab);
+                let mainItem = $(this);
+
+                $("html, body").animate(
+                    {
+                        scrollTop: $(mainItem).offset().top,
+                    },
+                    {
+                        duration: 370, // по умолчанию «400»
+                        easing: "linear", // по умолчанию «swing»
+                    }
+                );
             }
         });
 
@@ -101,10 +112,9 @@ $(document).ready(function () {
     if (device.length) {
         let deviceSlider = new Swiper(".device__slider", {
             loop: true,
-            // autoHeight: true,
+            autoHeight: true,
+
             observer: true,
-            observeParents: true,
-            observeSlideChildren: true,
             // autoplay: {
             //     delay: 3000,
             //     disableOnInteraction: false,
@@ -119,6 +129,38 @@ $(document).ready(function () {
                 prevEl: ".device__controls-left",
             },
         });
+        $(".show-all-list").on("click", function (e) {
+            e.preventDefault();
+            $(this)
+                .closest(".device__slide-group")
+                .find(".device__slide-desc")
+                .slideToggle();
+            $(this)
+                .closest(".device__slide-group")
+                .find(".device__slide-list-title")
+                .slideToggle();
+            $(this)
+                .closest(".device__slide-group")
+                .find(".device__slide-list")
+                .slideToggle();
+            $(this).toggleClass("show-all-list--active");
+
+            deviceSlider.update();
+        });
+    }
+
+    //галерея
+    const gallery = $(".gallery");
+    if (gallery.length) {
+        let gallerySlider = new Swiper(".gallery__container", {
+            loop: true,
+            slidesPerView: "auto",
+            observer: true,
+            navigation: {
+                nextEl: ".gallery__arrow--right",
+                prevEl: ".gallery__arrow--left",
+            },
+        });
     }
 
     //слайдер результатов
@@ -126,6 +168,7 @@ $(document).ready(function () {
     if (results.length) {
         let resultsSlider = new Swiper(".results__slider", {
             autoHeight: true,
+            loop: true,
             slidesPerView: 3,
             spaceBetween: 20,
             observer: true,
@@ -166,6 +209,7 @@ $(document).ready(function () {
             autoHeight: true,
             slidesPerView: 4,
             spaceBetween: 20,
+            loop: true,
             navigation: {
                 nextEl: ".workers__arrows-item--right",
                 prevEl: ".workers__arrows-item--left",
@@ -198,6 +242,7 @@ $(document).ready(function () {
             autoHeight: true,
             slidesPerView: 5,
             spaceBetween: 20,
+            loop: true,
             navigation: {
                 nextEl: ".socials__arrows-item--right",
                 prevEl: ".socials__arrows-item--left",
@@ -230,7 +275,7 @@ $(document).ready(function () {
     if (reviews.length) {
         let reviewsSlider = new Swiper(".reviews__slider", {
             slidesPerView: "auto",
-            // loop: true,
+            loop: true,
             spaceBetween: 80,
             // navigation: {
             //     nextEl: ".socials__arrows-item--right",
@@ -268,22 +313,6 @@ $(document).ready(function () {
     $(".burger__menu").on("click", function (e) {
         e.preventDefault();
         $(".header__top, .header__bottom").slideToggle();
-    });
-
-    $(".show-all-list").on("click", function (e) {
-        e.preventDefault();
-        $(this)
-            .closest(".device__slide-group")
-            .find(".device__slide-desc")
-            .slideToggle();
-        $(this)
-            .closest(".device__slide-group")
-            .find(".device__slide-list-title")
-            .slideToggle();
-        $(this)
-            .closest(".device__slide-group")
-            .find(".device__slide-list")
-            .slideToggle();
-        $(this).toggleClass("show-all-list--active");
+        $(this).toggleClass("burger__menu--active");
     });
 });
