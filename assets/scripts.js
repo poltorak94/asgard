@@ -121,13 +121,13 @@ $(document).ready(function () {
             //     disableOnInteraction: false,
             // },
             pagination: {
-                el: ".device__controls-pagination",
+                el: ".device .device__controls-pagination",
                 clickable: true,
             },
 
             navigation: {
-                nextEl: ".device__controls-right",
-                prevEl: ".device__controls-left",
+                nextEl: ".device .device__controls-right",
+                prevEl: ".device .device__controls-left",
             },
         });
         $(".show-all-list").on("click", function (e) {
@@ -181,6 +181,15 @@ $(document).ready(function () {
                 320: {
                     slidesPerView: 1,
                     spaceBetween: 0,
+                    pagination: {
+                        el: ".results .device__controls-pagination",
+                        clickable: true,
+                    },
+
+                    navigation: {
+                        nextEl: ".results .device__controls-right",
+                        prevEl: ".results .device__controls-left",
+                    },
                 },
                 768: {
                     slidesPerView: 2,
