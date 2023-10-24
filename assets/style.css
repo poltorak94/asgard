@@ -1710,11 +1710,13 @@ body {
       background: url("./img/show-more.svg") no-repeat;
       position: absolute;
       right: 25px;
-      transition: 200ms ease all; }
+      transition: 200ms ease all;
+      top: 19px; }
     .show-all-list--active::before {
       content: "Свернуть"; }
     .show-all-list--active::after {
-      transform: rotate(180deg); }
+      transform: rotate(180deg);
+      top: 14px; }
 
   .device__slide-desc,
   .device__slide-list-title {
@@ -1931,14 +1933,34 @@ body {
 
   .contacts__info {
     padding: 20px 15px;
-    max-width: 240px; }
+    width: calc(100% - 30px);
+    left: 15px; }
 
   .contacts .button-main {
     min-width: auto;
     width: 100%;
     font-size: 14px;
     padding-top: 14px;
-    padding-bottom: 14px; } }
+    padding-bottom: 14px; }
+
+  .presentations,
+  .locations {
+    width: calc(100% - 30px);
+    margin: 0 15px; }
+
+  .presentations__grid {
+    padding-top: 22px;
+    padding-left: 0;
+    padding-right: 0; }
+
+  .presentations__grid .button-main {
+    left: 0;
+    width: 100%; }
+
+  .button-main,
+  .show-all-list,
+  .button-arrow {
+    border-radius: 50px; } }
 .tippy-box {
   border-radius: 27px;
   background: #fff;
