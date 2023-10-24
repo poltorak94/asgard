@@ -2476,6 +2476,8 @@ body {
     .locations__map-inner {
         overflow-x: auto;
         overflow-y: hidden;
+        position: relative;
+        right: -15px;
     }
 }
 

@@ -1823,7 +1823,9 @@ body {
 
   .locations__map-inner {
     overflow-x: auto;
-    overflow-y: hidden; } }
+    overflow-y: hidden;
+    position: relative;
+    right: -15px; } }
 .main-slider__slide-image-mob {
   display: none; }
 
