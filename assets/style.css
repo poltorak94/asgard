@@ -524,7 +524,7 @@ body {
     .tabs__nav-item {
       display: flex;
       align-items: center;
-      padding: 5px 35px;
+      padding: 8px 30px;
       border: 2px solid #31b9b8;
       border-radius: 12px;
       font-weight: 500;
