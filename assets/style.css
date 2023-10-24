@@ -1620,6 +1620,7 @@ body {
 
   .tabs__nav-item {
     padding: 5px 15px;
+    padding-right: 30px;
     position: relative; }
     .tabs__nav-item::after {
       content: url("./img/show-more.svg");
@@ -1629,8 +1630,8 @@ body {
       content: url("./img/show-more-w.svg"); }
 
   .tabs__nav-item svg {
-    width: 30px;
-    height: 50px; }
+    width: 38px;
+    height: 38px; }
 
   .tabs__items {
     display: none; }
