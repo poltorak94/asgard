@@ -1848,11 +1848,15 @@ body {
     padding-bottom: 0;
     height: 560px; }
 
+  .locations {
+    padding-bottom: 40px; }
+
   .locations__map-inner {
     overflow-x: auto;
     overflow-y: hidden;
     position: relative;
-    right: -15px; }
+    right: -15px;
+    padding-bottom: 40px; }
 
   .device__controls--results {
     display: flex;
