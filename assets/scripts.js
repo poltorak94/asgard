@@ -21,21 +21,28 @@ $(document).ready(function () {
     });
 
     //главный слайдер
-    const mainSlider = $(".main-slider");
-    if (mainSlider) {
-        let heroSlider = new Swiper(".main-slider__container", {
-            loop: true,
+
+    const hero = $(".hero-slider");
+    if (hero) {
+        let heroWrapper = new Swiper(".hero-slider__swiper", {});
+        let textSlider = new Swiper(".text-slider__container", {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".text-slider__arrow--right",
+                prevEl: ".text-slider__arrow--left",
+            },
             pagination: {
-                el: ".main-slider__pagination",
+                el: ".text-slider__pagination",
                 clickable: true,
             },
-            // autoplay: {
-            //     delay: 5000,
-            //     disableOnInteraction: false,
-            // },
-            navigation: {
-                nextEl: ".main-slider__arrow--right",
-                prevEl: ".main-slider__arrow--left",
+            spaceBetween: 100,
+            on: {
+                slideChange: function () {
+                    heroWrapper.slideTo(textSlider.activeIndex);
+                },
             },
         });
     }
