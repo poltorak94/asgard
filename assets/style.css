@@ -499,7 +499,7 @@ body {
       text-align: center;
       position: relative;
       z-index: 99;
-      top: 415px;
+      top: 445px;
       display: inline-flex;
       align-items: center;
       justify-content: center; }
@@ -571,6 +571,10 @@ body {
             left: 20px; }
           .hero-slider .text-slider__arrow--right {
             right: 20px; } }
+  @media (min-width: 2049px) {
+    .hero-slider .hero-slider__lines-up,
+    .hero-slider .hero-slider__lines-down {
+      background-image: none; } }
 
 .button-arrow {
   display: inline-flex;
