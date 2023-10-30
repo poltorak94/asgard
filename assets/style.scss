@@ -906,7 +906,11 @@ body {
 }
 
 .about {
-    padding-top: 100px;
+    padding-top: 25px;
+
+    @media (min-width: 2049px) {
+        padding-top: 100px;
+    }
     &__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

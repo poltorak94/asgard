@@ -635,7 +635,10 @@ body {
     background: #1daaa9; }
 
 .about {
-  padding-top: 100px; }
+  padding-top: 25px; }
+  @media (min-width: 2049px) {
+    .about {
+      padding-top: 100px; } }
   .about__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
